@@ -1,0 +1,102 @@
+.expert {
+	width: 825px;
+	&__title {
+		@include adaptiv-value("margin-bottom", 30, 15, 0);
+	}
+	&__wrapper {
+		height: 370px;
+	}
+	&__progress {
+		width: 100%;
+		height: 2px;
+		background-color: rgba(97, 120, 80, 0.3);
+		position: relative;
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+		&::before {
+			content: "";
+			position: absolute;
+			top: -50%;
+			transform: translate(0, -25%);
+			left: 0;
+			width: 10%;
+			@include adaptiv-value("height", 8, 4, 0);
+			background-color: $colorTen;
+			border-radius: 5px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px -12px;
+		height: 100%;
+	}
+
+	&__column {
+		flex: 0 0 30%;
+		padding: 0px 12px;
+		height: 100%;
+	}
+
+	&__item {
+		border-bottom: 1px solid $colorNine;
+		@include adaptiv-value("padding-bottom", 20, 10, 0);
+		display: flex;
+		flex-direction: column;
+		&-opacity {
+			opacity: 0.5;
+		}
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+		@include adaptiv-value("margin-bottom", 10, 5, 0);
+	}
+
+	&__icon {
+		@include adaptiv-value("width", 24, 20, 0);
+		@include adaptiv-value("height", 24, 20, 0);
+		border-radius: 100%;
+		border: 2px solid $colorTen;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			max-width: 100%;
+		}
+		&-brown {
+			border: 2px solid $colorFive;
+		}
+		&-black {
+			border: 2px solid $colorEight;
+		}
+	}
+
+	&__percent {
+		color: $colorTen;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		font-weight: 500;
+		@include adaptiv-value("margin-left", 10, 5, 0);
+		&-brown {
+			color: $colorFive;
+		}
+		&-black {
+			color: $colorEight;
+		}
+	}
+
+	&__img {
+		padding: 0px 0px 100% 0px;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	&__label {
+		flex: 1 1 auto;
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		font-weight: 500;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	
+}

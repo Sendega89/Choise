@@ -1,0 +1,140 @@
+.accounts {
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		&:first-child {
+			flex: 0 0 59.03%;
+			margin: 0px 16px 0px 0px;
+		}
+		&:last-child {
+			flex: 0 0 39.03%;
+		}
+	}
+
+	&__title {
+		@include adaptiv-value("margin-bottom", 30, 20, 0);
+	}
+
+
+	&__btn {
+		@include adaptiv-value("margin-top", 60, 30, 0);
+	}
+}
+//................................................................................................................
+.accounts-stat {
+	background-color: #fff;
+	border-radius: 5px;
+	height: 100%;
+	@include adaptiv-value("padding-top", 35, 15, 0);
+	@include adaptiv-value("padding-right", 45, 15, 0);
+	@include adaptiv-value("padding-bottom", 35, 20, 0);
+	@include adaptiv-value("padding-left", 45, 15, 0);
+}
+
+//................................................................................................................
+
+.item-accounts {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	transition: all 0.3s ease;
+	&__icon {
+		flex: 0 0 31px;
+		width: 31px;
+		height: 31px;
+	}
+
+	&__system {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		flex: 1 1 auto;
+		@include adaptiv-value("margin-left", 15, 8, 0);
+		p {
+			@include adaptiv-value("font-size", 14, 12, 0);
+			font-weight: 300;
+			@include adaptiv-value("margin-top", 5, 1, 0);
+		}
+	}
+
+	&__money {
+		text-align: right;
+		color: $colorTwo;
+		@include adaptiv-value("font-size", 24, 20, 0);
+		font-weight: 500;
+		flex: 0 0 75px;
+		width: 75px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 13px;
+			height: 13px;
+			top: 50%;
+			right: -15px;
+			transform: translate(0, -50%);
+			background: url("../img/icons/uah_green.svg") 0 0 / cover no-repeat;
+			z-index: 1;
+		}
+		&-euro {
+			&::before {
+				background: url("../img/accounts/euro.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+}
+
+//................................................................................................................
+
+.accounts-reward {
+	background-color: #fff;
+	border-radius: 5px;
+	height: 100%;
+	@include adaptiv-value("padding-top", 30, 20, 0);
+	@include adaptiv-value("padding-right", 35, 20, 0);
+	@include adaptiv-value("padding-bottom", 30, 20, 0);
+	@include adaptiv-value("padding-left", 35, 20, 0);
+	&__item {
+		width: 100%;
+		border-radius: 10px;
+		background-color: #fafafa;
+		position: relative;
+		@include adaptiv-value("margin-bottom", 15, 10, 0);
+transition: all 0.3s ease;
+		display: block;
+		color: #656565;
+		font-size: 14px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: #fafafa;
+		padding-top: 17px;
+		padding-right: 15px;
+		padding-bottom: 17px;
+		padding-left: 70px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 48px;
+			height: 48px;
+		}
+		&-money {
+			&::before {
+				background: url("../img/accounts/money.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-transfer {
+			&::before {
+				background: url("../img/accounts/transfer.png") 0 0 / cover no-repeat;
+			}
+		}
+		&-convert {
+			&::before {
+				background: url("../img/accounts/convert.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+
+}

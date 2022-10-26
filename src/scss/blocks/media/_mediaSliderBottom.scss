@@ -1,0 +1,91 @@
+.media-slider-bottom {
+	width: 825px;
+	&__wrapper {
+		overflow: hidden;
+		width: 100%;
+	}
+	&__row {
+		display: flex;
+		@include adaptiv-value("margin-right", -15, -10, 0);
+		@include adaptiv-value("margin-left", -15, -10, 0);
+	}
+
+	&__column {
+		flex: 0 0 33.333%;
+		@include adaptiv-value("padding-right", 15, 10, 0);
+		@include adaptiv-value("padding-left", 15, 10, 0);
+	}
+
+	&__item {
+		height: 100%;
+		position: relative;
+		@include adaptiv-value("padding-top", 20, 10, 0);
+		@include adaptiv-value("padding-bottom", 20, 10, 0);
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $colorNine;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+	}
+
+	&__controls {
+		display: none;
+		justify-content: flex-end;
+		margin-top: 25px;
+	}
+
+	&__prev {
+		width: 35px;
+		height: 8px;
+		cursor: pointer;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__next {
+		margin-right: 10px;
+		width: 35px;
+		height: 8px;
+		cursor: pointer;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//................................................................................................................
+
+.item-media-slider-bottom {
+	cursor: pointer;
+	&__title {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 14, 12, 0);
+		font-weight: 300;
+		text-transform: uppercase;
+		@include adaptiv-value("margin-bottom", 15, 5, 0);
+		transition: all 0.3s ease;
+	}
+
+	&__img {
+		padding: 0px 0px 100% 0px;
+		margin-bottom: 15px;
+		transition: all 0.3s ease;
+	}
+
+	&__text {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 14, 12, 0);
+		transition: all 0.3s ease;
+	}
+}

@@ -1,0 +1,145 @@
+.receipt {
+	border-radius: 5px;
+	background-color: #ffffff;
+	@include adaptiv-value("padding-top", 35, 20, 0);
+	@include adaptiv-value("padding-right", 45, 3, 0);
+	@include adaptiv-value("padding-bottom", 40, 30, 0);
+	@include adaptiv-value("padding-left", 45, 3, 0);
+	&__item {
+	}
+}
+
+//................................................................................................................
+
+.item-receipt {
+	background-color: #f7f7f7;
+	border-radius: 50px;
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	transition: all 0.3s ease;
+	&.active {
+		border-radius: 5px;
+		transition: all 0.3s ease;
+		.values-receipt {
+			background-color: transparent;
+			transition: all 0.3s ease;
+		}
+		.item-receipt__arrow {
+			transition: all 0.3s ease;
+			&::before {
+				transform: translate(-50%, -70%) rotate(45deg);
+			}
+		}
+	}
+	&__body {
+		border-radius: 50px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+	&__arrow {
+		border-radius: 100%;
+		@include adaptiv-value("width", 28, 23, 0);
+		@include adaptiv-value("height", 28, 23, 0);
+		background-color: $colorFive;
+		@include adaptiv-value("margin-right", 20, 10, 0);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			border: solid #fff;
+			border-width: 0 1px 1px 0;
+			display: inline-block;
+			padding: 4px;
+			transform: translate(-70%, -50%) rotate(-45deg);
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+	}
+
+	&__level {
+		@include adaptiv-value("font-size", 16, 14, 0);
+		color: $colorSeven;
+		span {
+			color: $colorOne;
+			font-weight: 500;
+			display: inline-block;
+			margin-left: 5px;
+		}
+	}
+
+
+	&__list {
+		display: none;
+		@include adaptiv-value("margin-top", 17, 15, 0);
+		@include adaptiv-value("padding-bottom", 30, 20, 0);
+		@include adaptiv-value("padding-right", 20, 10, 0);
+		@include adaptiv-value("padding-left", 60, 10, 0);
+	}
+
+	&__li {
+	}
+}
+
+//................................................................................................................
+
+.values-receipt {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: -5px;
+	color: $colorOne;
+	@include adaptiv-value("font-size", 16, 14, 0);
+	font-weight: 500;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	border-radius: 50px;
+
+	padding-top: 11px;
+	@include adaptiv-value("padding-right", 15, 10, 0);
+	padding-bottom: 11px;
+	@include adaptiv-value("padding-left", 15, 10, 0);
+
+
+	&__divider {
+		margin: 0px 10px;
+	}
+}
+
+//................................................................................................................
+
+
+.item-sub {
+	display: flex;
+	justify-content: space-between;
+	@include adaptiv-value("margin-bottom", 10, 5, 0);
+	&__name {
+		@include adaptiv-value("font-size", 16, 12, 0);
+		color: #777777;
+		span {
+			font-weight: 500;
+			color: #656565;
+			display: inline-block;
+			margin-left: 5px;
+		}
+	}
+
+	&__values {
+		display: flex;
+		color: #656565;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		text-transform: uppercase;
+	}
+
+
+
+	&__divider {
+		margin: 0px 5px;
+	}
+}

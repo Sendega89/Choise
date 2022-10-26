@@ -1,0 +1,652 @@
+.filter-team {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	&__btn {
+		&-plus {
+			width: 253px;
+		}
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+	&__footer {
+		background-color: #fff;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 35px;
+		padding-bottom: 45px;
+	}
+	&__columns {
+		display: flex;
+		color: #808080;
+		background-color: #fff;
+		text-align: center;
+
+		&-top {
+			border-radius: 5px;
+			margin-bottom: 6px;
+			display: flex;
+			color: $colorTwenty;
+			font-size: 10px;
+			background-color: #fff;
+			text-align: center;
+		}
+	}
+	&__item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		display: inline-block;
+		border-right: 2px solid #fafafa;
+		border-bottom: 2px solid #fafafa;
+		color: $colorSeven;
+		font-size: 14px;
+		&:last-child {
+			border-right: none;
+		}
+		&-top {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			display: inline-block;
+			border-right: 2px solid #fafafa;
+			font-size: 10px;
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+	&__filter-span-1 {
+		flex: 0 0 27px;
+	}
+
+	&__filter-span-2 {
+		flex: 0 0 24px;
+	}
+
+	&__line {
+		flex: 0 0 37px;
+	}
+
+	&__name {
+		text-decoration: underline;
+		flex: 0 0 102px;
+		transition: all 0.3s ease;
+	}
+
+	&__id {
+		flex: 0 0 93px;
+	}
+
+	&__om {
+		flex: 0 0 30px;
+	}
+
+	&__registration {
+		flex: 0 0 103px;
+	}
+
+	&__qualification {
+		flex: 0 0 87px;
+		text-transform: uppercase;
+	}
+
+	&__oo {
+		flex: 0 0 44px;
+	}
+
+	&__mo {
+		flex: 0 0 44px;
+	}
+
+	&__city {
+		flex: 0 0 80px;
+	}
+
+	&__contact {
+		flex: 0 0 145px;
+		color: $colorThree;
+		text-decoration: underline;
+	}
+	&-top {
+		&__filter-span-1 {
+			flex: 0 0 27px;
+		}
+
+		&__filter-span-2 {
+			flex: 0 0 24px;
+		}
+
+		&__line {
+			flex: 0 0 37px;
+		}
+
+		&__name {
+			flex: 0 0 102px;
+		}
+
+		&__id {
+			flex: 0 0 93px;
+		}
+
+		&__om {
+			flex: 0 0 30px;
+		}
+
+		&__registration {
+			flex: 0 0 103px;
+		}
+
+		&__qualification {
+			flex: 0 0 87px;
+		}
+
+		&__oo {
+			flex: 0 0 44px;
+		}
+
+		&__mo {
+			flex: 0 0 44px;
+		}
+
+		&__city {
+			flex: 0 0 80px;
+		}
+
+		&__contact {
+			flex: 0 0 145px;
+		}
+	}
+}
+
+//...................................................................................................
+
+.span__wrapper {
+	position: relative;
+	&::before {
+		position: absolute;
+		width: 22px;
+		height: 22px;
+		border-radius: 100%;
+		background-color: $colorFive;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #ffffff;
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-1 {
+		&::before {
+			content: "1";
+		}
+	}
+	&-2 {
+		&::before {
+			content: "2";
+		}
+	}
+	&-3 {
+		&::before {
+			content: "3";
+		}
+	}
+	&-4 {
+		&::before {
+			content: "4";
+		}
+	}
+	&-5 {
+		&::before {
+			content: "5";
+		}
+	}
+	&-6 {
+		&::before {
+			content: "6";
+		}
+	}
+	&-7 {
+		&::before {
+			content: "7";
+		}
+	}
+	&-8 {
+		&::before {
+			content: "8";
+		}
+	}
+}
+
+//...................................................................................................
+
+.span__mark {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 14px;
+		height: 14px;
+		border-radius: 100%;
+	}
+	&-green {
+		&::before {
+			background-color: $colorTwo;
+		}
+	}
+	&-red {
+		&::before {
+			background-color: $colorTwentyOne;
+		}
+	}
+	&-brown {
+		&::before {
+			background-color: $colorFive;
+		}
+	}
+}
+
+//................................................................................................................
+
+.item-filter {
+	border-radius: 5px;
+	background-color: #efefef;
+	width: 437px;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s ease;
+
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	&__btn {
+		font-size: 12px;
+		margin: 0px 4.5px;
+		width: 141px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+	}
+}
+.form-filter {
+	&__item {
+		border-bottom: 2px solid #fff;
+		&-range {
+			padding-top: 15px;
+			padding-right: 30px;
+			padding-bottom: 15px;
+			padding-left: 25px;
+		}
+		&-select {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding-top: 7px;
+			padding-right: 7px;
+			border-bottom: none;
+		}
+		&-select2 {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 10px;
+			padding-right: 30px;
+			padding-bottom: 10px;
+			padding-left: 25px;
+			align-items: center;
+		}
+
+		&-checkbox1 {
+			position: relative;
+		}
+		&-checkbox2 {
+			position: relative;
+		}
+		&-id1 {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 10px;
+			padding-right: 30px;
+			padding-bottom: 10px;
+			padding-left: 25px;
+			align-items: center;
+		}
+	}
+
+
+	&__select2 {
+		width: 147px;
+		border-radius: 3px;
+		border: 1px solid rgba(0, 0, 0, 0.13);
+		background-color: #ffffff;
+		padding-top: 5px;
+		padding-right: 9px;
+		padding-bottom: 5px;
+		padding-left: 9px;
+	}
+}
+
+//................................................................................................................
+
+.checkbox1 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+
+	&__input1 {
+		order: 2;
+	}
+
+	&__label1 {
+		order: 1;
+		color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+		position: relative;
+		padding-right: 15px;
+		align-items: center;
+		&::before {
+			content: "";
+			position: absolute;
+			border: solid $colorSeven;
+			border-width: 0 1px 1px 0;
+			display: inline-block;
+			padding: 2.5px;
+			transform: translate(0, -60%) rotate(45deg);
+			right: 0px;
+			top: 50%;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+
+		&.active {
+			&::before {
+				border: solid $colorSeven;
+				border-width: 0 1px 1px 0;
+				display: inline-block;
+				padding: 2.5px;
+				transform: translate(0, -50%) rotate(-135deg);
+			}
+		}
+		
+	}
+
+	&__list1 {
+		display: none;
+		margin-bottom: 10px;
+		&.active {
+			display: block;
+		}
+	}
+
+	&__item1 {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 5px;
+		padding-right: 30px;
+		padding-bottom: 5px;
+		padding-left: 25px;
+	}
+}
+
+//................................................................................................................
+
+.checkbox1__label-list1{
+	color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+}
+
+//................................................................................................................
+
+.checkbox2 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	&__input2 {
+		order: 2;
+	}
+
+	&__label2 {
+		order: 1;
+		color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+		position: relative;
+		padding-right: 15px;
+		&::before {
+			content: "";
+			position: absolute;
+			border: solid $colorSeven;
+			border-width: 0 1px 1px 0;
+			display: inline-block;
+			padding: 2.5px;
+			transform: translate(0, -60%) rotate(45deg);
+			right: 0px;
+			top: 50%;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+		&.active {
+			&::before {
+				border: solid $colorSeven;
+				border-width: 0 1px 1px 0;
+				display: inline-block;
+				padding: 2.5px;
+				transform: translate(0, -50%) rotate(-135deg);
+			}
+		}
+		&-list2 {
+			color: $colorNine;
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+
+	&__list2 {
+		display: none;
+		margin-bottom: 10px;
+		&.active {
+			display: block;
+		}
+	}
+
+	&__item2 {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 5px;
+		padding-right: 30px;
+		padding-bottom: 5px;
+		padding-left: 25px;
+	}
+}
+
+//................................................................................................................
+
+.checkbox2__label-list2{
+	color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+}
+
+//................................................................................................................
+
+.id1 {
+	&__label1 {
+		color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	&__input1 {
+		width: 147px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 9px;
+		padding-right: 9px;
+		border-radius: 5px;
+		@include adaptiv-value("font-size", 14, 12, 0);
+	}
+}
+
+//................................................................................................................
+
+.checkbox {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	&__label {
+		color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+
+}
+
+
+//................................................................................................................
+
+.item-select2 {
+	&__label {
+		color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+//................................................................................................................
+
+.form-filter {
+	&__label {
+		color: $colorNine;
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+	&__select {
+		&-hide {
+			background-color: #efefef;
+		}
+	}
+
+}
+
+//................................................................................................................
+
+.range-filter {
+	&__slider,
+	&__slider-2 {
+		height: 2px;
+		width: 145px;
+		background-color: $colorTen;
+		position: relative;
+		border-radius: 3px;
+		margin-left: 5px;
+		.noUi-base {
+			position: relative;
+			height: 2px;
+			width: 100%;
+			z-index: 1;
+		}
+		.noUi-origin {
+			will-change: transform;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 95%;
+			width: 100%;
+			transform-origin: 0 0;
+			transform-style: flat;
+		}
+		.noUi-handle {
+			width: 20px;
+			height: 20px;
+			box-shadow: 0 0 5px #bcbbbb;
+			background-color: #ffffff;
+			border-radius: 100%;
+			position: relative;
+			top: -10px;
+			cursor: pointer;
+			&::after {
+				content: "";
+				border-radius: 100%;
+				width: 10px;
+				height: 10px;
+				background-color: $colorTen;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+//................................................................................................................
+
+.values-range-filter {
+	display: flex;
+	width: 163px;
+	margin: 0px -20px 25px -20px;
+	&__column {
+		flex: 0 1 50%;
+		padding: 0px 20px;
+	}
+
+}
+
+//................................................................................................................
+
+.input {
+	width: 60px;
+	height: 27px;
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	background-color: #ffffff;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	color: $colorSeven;
+	font-size: 16px;
+}
+.filter-team__btn-more{
+	width: 150px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.filter-team-columns-hide{
+	display: none;
+}

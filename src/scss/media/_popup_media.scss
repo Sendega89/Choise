@@ -1,0 +1,79 @@
+@media (max-width: 850.98px) {
+	.popup {
+		&__content {
+			width: 330px;
+		}
+	}
+	.item-top-popup {
+		padding-top: 25px;
+		padding-right: 15px;
+		padding-left: 15px;
+		padding-bottom: 25px;
+		&__id {
+			margin-bottom: 25px;
+		}
+		&__column {
+			flex: 0 0 50%;
+		}
+	}
+	.unit-popup {
+		&__number {
+			width: 30px;
+			height: 30px;
+			flex: 0 0 30px;
+		}
+	}
+	.item-top-popup-bottom {
+		&__row {
+			flex-wrap: wrap;
+			margin: 0px -15px 20px -15px;
+		}
+		&__column {
+			flex: 1 1 100%;
+		}
+	}
+	.item-edit {
+		padding-top: 30px;
+		padding-right: 10px;
+		padding-bottom: 60px;
+		padding-left: 10px;
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+		}
+		&__unit {
+			border: 1px solid #c4c4c4;
+			padding-top: 15px;
+			padding-left: 10px;
+			padding-bottom: 40px;
+			padding-right: 10px;
+		}
+		&__titl {
+			margin-bottom: 30px;
+		}
+		&__input {
+			margin-bottom: 10px;
+		}
+		&__unit {
+			margin-bottom: 10px;
+		}
+		&__button {
+			margin: 35px auto 0 auto;
+		}
+	}
+	.item-edit-options {
+		&__label {
+			&::before {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

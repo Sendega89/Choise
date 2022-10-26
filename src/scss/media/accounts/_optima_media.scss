@@ -1,0 +1,41 @@
+@media (any-hover: hover) {
+	.item-optima{
+		&:hover{
+			transform: scale(1.01);
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.optima {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.optima {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.optima {
+		width: 550px;
+	}
+}
+@media (max-width: 850.98px) {
+	.optima {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.optima {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.optima {
+		width: 330px;
+	}
+}

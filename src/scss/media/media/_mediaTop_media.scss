@@ -1,0 +1,52 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.media-img__wrapper,
+	.media-header {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.media-img__wrapper,
+	.media-header {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.media-img__wrapper,
+	.media-header {
+		width: 550px;
+	}
+}
+@media (max-width: 850.98px) {
+	.media-img__wrapper,
+	.media-header {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.media-img__wrapper,
+	.media-header {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.media-img__wrapper,
+	.media-header {
+		width: 330px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.media-header,
+	.media-img__wrapper {
+		width: 330px;
+		margin: 0px auto 20px auto;
+		&__btn {
+			width: 105px;
+		}
+	}
+}

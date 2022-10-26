@@ -1,0 +1,114 @@
+.user {
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		&:first-child {
+			flex: 0 0 59.03%;
+			margin: 0px 16px 0px 0px;
+		}
+		&:last-child {
+			flex: 0 0 39.03%;
+		}
+	}
+}
+
+//...................................................................................................
+
+.item-user {
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding: 20px 10px 20px 23px;
+	display: flex;
+	position: relative;
+	height: 100%;
+	&__column {
+		&:first-child {
+			flex: 0 0 123px;
+			width: 123px;
+			margin: 0px 24px 0px 0px;
+			position: relative;
+		}
+		&:last-child {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__photo {
+		padding: 0px 0px 100% 0px;
+		border-radius: 100%;
+	}
+
+	&__label {
+		color: #656565;
+		position: absolute;
+		bottom: 0;
+		right: -60%;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -30px;
+			background: url("../img/icons/flag.svg") 0 0 no-repeat;
+			width: 21px;
+			height: 13px;
+		}
+	}
+	&__mark {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	&__name {
+		margin: 10px 0px 5px 0px;
+	}
+
+	&__phone {
+		color: #133215;
+		font-size: 18px;
+	}
+}
+
+//...................................................................................................
+
+.actions-user {
+	border-radius: 5px;
+	background-color: #ffffff;
+	height: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	&__column {
+		flex: 0 0 33.333%;
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 51px;
+		height: 51px;
+		border-radius: 10px;
+		margin: 0px auto;
+		transition: all 0.3s ease;
+		
+		&-brown {
+			background-color: $colorFive;
+		}
+		&-green {
+			background-color: $colorTwo;
+		}
+		&-blue {
+			background-color: $colorThree;
+		}
+	}
+
+	&__title {
+		color: #656565;
+		margin: 10px 0px 0px 0px;
+		transition: all 0.3s ease;
+	}
+}

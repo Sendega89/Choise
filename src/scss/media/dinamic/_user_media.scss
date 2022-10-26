@@ -1,0 +1,27 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.actions-user {
+		&__item-dinamic {
+			display: flex;
+			align-items: center;
+			padding: 0px 30px;
+			justify-content: space-between;
+		}
+		&__icon-dinamic {
+			margin: 0;
+		}
+		&__title-dinamic {
+			margin: 0;
+			font-size: 16px;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

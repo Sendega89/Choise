@@ -1,0 +1,263 @@
+.shopping-sale {
+	&__header {
+		margin-top: 40px;
+	}
+	&__mobile {
+		display: none;
+	}
+	&__desctop {
+	}
+
+	&__top {
+	}
+	&__btn-plus {
+		&.active {
+			span {
+			}
+		}
+	}
+	&__btn-find {
+		width: 253px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&____filter-item {
+		&.active {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+		}
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		background-color: #fff;
+		border-radius: 5px;
+	}
+
+	&__item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		display: inline-block;
+		border-bottom: 2px solid #fafafa;
+		color: $colorSeven;
+		font-size: 14px;
+		color: #808080;
+		&-top {
+			color: #808080;
+			font-size: 10px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			display: inline-block;
+			border-right: 2px solid #fafafa;
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+
+	&__1 {
+		width: 23px;
+		flex: 0 0 23px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 0;
+			height: 0;
+			transition: all 0.3s ease;
+			border-left: 4px solid transparent;
+			border-right: 4px solid transparent;
+			border-top: 4px solid gray;
+		}
+		&.active {
+			&::after {
+				transform: rotate(180deg) translate(50%, 50%);
+				width: 0;
+				height: 0;
+				transition: all 0.3s ease;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid gray;
+			}
+		}
+	}
+
+	&__2 {
+		width: 27px;
+		flex: 0 0 27px;
+	}
+
+	&__id {
+		width: 80px;
+		flex: 0 0 80px;
+	}
+
+	&__date {
+		width: 95px;
+		flex: 0 0 95px;
+	}
+
+	&__price {
+		width: 85px;
+		flex: 0 0 85px;
+	}
+
+	&__delivery {
+		width: 128px;
+		flex: 0 0 128px;
+	}
+
+	&__payment {
+		width: 100px;
+		flex: 0 0 100px;
+	}
+
+	&__action {
+		width: 120px;
+		flex: 0 0 120px;
+		.shopping__icon {
+			margin-right: 10px;
+			width: 15px;
+			height: 15px;
+			img {
+				max-width: 100%;
+			}
+			&:last-child {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+	&__type {
+		width: 160px;
+		flex: 0 0 160px;
+		position: relative;
+		.shopping__icon {
+			position: absolute;
+			top: 40%;
+			right: 3px;
+			transform: translate(0, -50%);
+		}
+	}
+}
+
+.shopping-sale-top {
+	&__1 {
+		width: 23px;
+		flex: 0 0 23px;
+	}
+
+	&__2 {
+		width: 27px;
+		flex: 0 0 27px;
+	}
+
+	&__id {
+		width: 80px;
+		flex: 0 0 80px;
+	}
+
+	&__date {
+		width: 95px;
+		flex: 0 0 95px;
+	}
+
+	&__price {
+		width: 85px;
+		flex: 0 0 85px;
+	}
+
+	&__delivery {
+		width: 128px;
+		flex: 0 0 128px;
+	}
+
+	&__payment {
+		width: 100px;
+		flex: 0 0 100px;
+	}
+
+	&__action {
+		width: 130px;
+		flex: 0 0 130px;
+	}
+	&__type {
+		width: 150px;
+		flex: 0 0 150px;
+	}
+}
+
+.mobile-shopping {
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	&__type {
+		color: #808080;
+		font-size: 12px;
+	}
+
+	&__typetstatus {
+		color: $colorSeven;
+		font-size: 14px;
+	}
+}
+
+.range-filter {
+	&__slider,
+	&__slider-2 {
+		height: 2px;
+		width: 145px;
+		background-color: $colorTen;
+		position: relative;
+		border-radius: 3px;
+		margin-left: 5px;
+		.noUi-base {
+			position: relative;
+			height: 2px;
+			width: 100%;
+			z-index: 1;
+		}
+		.noUi-origin {
+			will-change: transform;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 95%;
+			width: 100%;
+			transform-origin: 0 0;
+			transform-style: flat;
+		}
+		.noUi-handle {
+			width: 20px;
+			height: 20px;
+			box-shadow: 0 0 5px #bcbbbb;
+			background-color: #ffffff;
+			border-radius: 100%;
+			position: relative;
+			top: -10px;
+			cursor: pointer;
+			&::after {
+				content: "";
+				border-radius: 100%;
+				width: 10px;
+				height: 10px;
+				background-color: $colorTen;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,68 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.slider-marketing {
+		width: 800px;
+
+		&__wrapper {
+			width: 800px;
+		}
+		&__scroll {
+			height: 90%;
+		}
+	}
+}
+@media (max-width: 1110.98px) {
+	.slider-marketing {
+		width: 700px;
+		&__wrapper {
+			width: 700px;
+		}
+	}
+}
+@media (max-width: 1010.98px) {
+	.slider-marketing {
+		width: 550px;
+		&__wrapper {
+			width: 550px;
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.slider-marketing {
+		width: 700px;
+		margin: 0px auto 100px auto;
+		&__wrapper {
+			width: 700px;
+		}
+	}
+	.plan {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.slider-marketing {
+		width: 500px;
+		&__wrapper {
+			width: 500px;
+		}
+	}
+	.plan {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.slider-marketing {
+		width: 330px;
+		&__wrapper {
+			width: 330px;
+		}
+	}
+	.plan {
+		width: 330px;
+		margin: 0px auto 35px auto;
+	}
+}

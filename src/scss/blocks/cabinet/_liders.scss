@@ -1,0 +1,139 @@
+.liders {
+	background-color: #fff;
+	border-radius: 5px;
+	@include adaptiv-value("padding-top", 33, 16, 0);
+	@include adaptiv-value("padding-right", 85, 10, 0);
+	@include adaptiv-value("padding-bottom", 33, 16, 0);
+	@include adaptiv-value("padding-left", 85, 10, 0);
+	display: flex;
+	flex-direction: column;
+	&__title {
+		@include adaptiv-value("margin-bottom", 30, 15, 0);
+	}
+	&__row {
+		flex: 1 1 auto;
+		@include adaptiv-value("margin-bottom", 24, 12, 0);
+	}
+
+	&__btn {
+		align-self: center;
+		width: 150px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&-hide{
+		display: none;
+	}
+}
+
+//................................................................................................................
+
+.item-liders {
+	position: relative;
+	margin-bottom: 14px;
+	display: block;
+	padding-right: 33px;
+	padding-left: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.3s ease;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+	}
+	&::before {
+		@include adaptiv-value("width", 27, 19, 0);
+		@include adaptiv-value("height", 27, 19, 0);
+		@include adaptiv-value("left", 15, 8, 0);
+		top: 10%;
+		background: url("../img/icons/liders_check.svg") 0 0 / cover no-repeat;
+	}
+	&::after {
+		@include adaptiv-value("width", 16, 12, 0);
+		@include adaptiv-value("height", 16, 12, 0);
+		@include adaptiv-value("right", 0, 140, 0);
+		top: 50%;
+		transform: translate(0, -50%);
+		background: url("../img/icons/liders_arrow.svg") 0 0 / cover no-repeat;
+	}
+	&__row {
+		
+
+		display: flex;
+		position: relative;
+		z-index: 1;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__name {
+		color: #ffffff;
+		@include adaptiv-value("font-size", 16, 8, 0);
+		font-weight: 500;
+	}
+	&__body {
+		display: flex;
+	}
+
+	&__line {
+		color: #ffffff;
+	}
+
+	&__number {
+		color: $colorEight;
+		@include adaptiv-value("font-size", 20, 10, 0);
+		font-weight: 500;
+		text-transform: uppercase;
+		position: relative;
+		@include adaptiv-value("padding-left", 25, 12, 0);
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include adaptiv-value("width", 18, 9, 0);
+			@include adaptiv-value("height", 18, 9, 0);
+		}
+		&-left {
+			&::before {
+				background: url("../img/icons/lider_icon.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-right {
+			&::before {
+				background: url("../img/icons/liders_icon.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+
+	&__divider {
+		color: $colorEight;
+		@include adaptiv-value("font-size", 20, 10, 0);
+		font-weight: 500;
+		text-transform: uppercase;
+		@include adaptiv-value("margin-right", 15, 8, 0);
+		@include adaptiv-value("margin-left", 15, 8, 0);
+	}
+
+	&__point {
+		color: #ffffff;
+		@include adaptiv-value("font-size", 20, 10, 0);
+		font-weight: 500;
+		text-transform: uppercase;
+		@include adaptiv-value("padding-right", 15, 150, 0);
+		span {
+			@include adaptiv-value("font-size", 18, 9, 0);
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		img {
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.slider-marketing {
+	position: relative;
+
+	&__wrapper {
+		overflow: hidden;
+		width: 825px;
+		height: 455px;
+		position: relative;
+		border-left: 1px solid $colorSeven;
+		@include adaptiv-value("padding-left", 25, 10, 0);
+	}
+
+	&__body {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
+
+	&__slide {
+		flex: 1 0 100%;
+	}
+
+	&__item {
+	}
+	&__scroll {
+		position: absolute;
+		top: 0;
+		right: -12px;
+		width: 6px;
+		height: 95%;
+	}
+	&__drag-scroll {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 100px;
+		background-color: #999999;
+		cursor: pointer;
+	}
+}
+
+//..............................................................................................
+
+.item-slider-marketing {
+	&__number {
+		@include adaptiv-value("font-size", 18, 16, 0);
+		font-weight: 500;
+		color: $colorOne;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		line-height: 150%;
+		border-bottom: 1px solid $colorSeven;
+		@include adaptiv-value("padding-bottom", 40, 30, 0);
+		@include adaptiv-value("margin-bottom", 25, 15, 0);
+	}
+}

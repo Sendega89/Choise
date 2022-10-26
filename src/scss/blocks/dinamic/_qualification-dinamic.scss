@@ -1,0 +1,55 @@
+.qualification-dinamic {
+	background-color: #fff;
+	border-radius: 5px;
+	@include adaptiv-value("padding-top", 15, 10, 0);
+	@include adaptiv-value("padding-right", 44, 22, 0);
+	@include adaptiv-value("padding-bottom", 30, 15, 0);
+	@include adaptiv-value("padding-left", 44, 22, 0);
+	width: 825px;
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__wrapper {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiv-value("margin-right", -20, -10, 0);
+		@include adaptiv-value("margin-left", -20, -10, 0);
+	}
+
+	&__column {
+		flex: 0 0 25%;
+		@include adaptiv-value("padding-right", 20, 10, 0);
+		@include adaptiv-value("padding-left", 20, 10, 0);
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+
+	&__item {
+		height: 100%;
+		flex: 1 1 auto;
+	}
+}
+
+.item-qualification {
+	&__text {
+		font-size: 14px;
+	}
+}
+//...................................................................................................
+
+.swiper-slide {
+	border-radius: 5px;
+	height: 110px;
+}
+.swiper-3d {
+	.swiper-slide-shadow-left,
+	.swiper-slide-shadow-right {
+		background-image: none;
+	}
+}

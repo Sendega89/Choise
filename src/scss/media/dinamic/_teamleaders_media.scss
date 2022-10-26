@@ -1,0 +1,60 @@
+@media (any-hover: hover) {
+	.teamleaders {
+		&__column {
+			&:hover {
+				transform: scale(1.01);
+			}
+		}
+	}
+	.item-team{
+		&:hover{
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.teamleaders {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.teamleaders {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.teamleaders {
+		width: 550px;
+	}
+}
+@media (max-width: 850.98px) {
+	.teamleaders {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.teamleaders {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.teamleaders {
+		width: 330px;
+	}
+	.filter {
+		&__btn {
+			font-size: 11px;
+		}
+	}
+	.form-filter {
+		&__select {
+			font-size: 11px;
+			padding-left: 7px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+	}
+}

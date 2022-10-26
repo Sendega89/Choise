@@ -1,0 +1,56 @@
+
+.item-user-profile {
+	display: flex;
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding: 20px 10px 20px 23px;
+	position: relative;
+	&__column {
+		&:first-child {
+			flex: 0 0 123px;
+			width: 123px;
+			margin: 0px 24px 0px 0px;
+			position: relative;
+		}
+		&:last-child {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__photo {
+		padding: 0px 0px 100% 0px;
+		border-radius: 100%;
+	}
+
+	&__label {
+		color: #656565;
+		position: absolute;
+		bottom: 0;
+		font-size: 14px;
+		@include adaptiv-value("right", -80, -70, 0);
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -30px;
+			background: url("../img/icons/flag.svg") 0 0 / cover no-repeat;
+			width: 21px;
+			height: 13px;
+		}
+	}
+
+	&__name {
+		margin: 10px 0px 5px 0px;
+	}
+
+	&__phone {
+		color: #133215;
+		font-size: 18px;
+	}
+
+	&__mark {
+		position: absolute;
+		bottom: 9px;
+		right: 20px;
+	}
+}

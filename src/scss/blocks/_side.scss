@@ -1,0 +1,232 @@
+.menu-page {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin: 0px 0px 20px 0px;
+	padding: 40px 0px 30px 0px;
+	overflow: hidden;
+	&__link {
+		color: #808080;
+		display: block;
+		position: relative;
+		padding: 0px 0px 0px 65px;
+		margin: 0px 0px 30px 0px;
+		font-size: 14px;
+		span {
+			position: absolute;
+			border: solid #9b9b9e;
+			border-width: 0 1px 1px 0;
+			display: inline-block;
+			padding: 4px;
+			transform: rotate(-45deg);
+			right: 25px;
+			top: 0;
+			transition: all 0.3s ease;
+			cursor: pointer;
+		}
+		&-arrow {
+			&::after {
+				content: "";
+				position: absolute;
+				top: -50%;
+				left: -100%;
+				width: 28px;
+				height: 28px;
+				background-color: $colorOne;
+				border-radius: 100%;
+				transition: all 0.3s ease;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 25px;
+			width: 21px;
+			height: 21px;
+		}
+		&.active {
+			color: $colorOne;
+			&::after {
+				left: 0%;
+				transform: translate(-50%, 0);
+				transition: all 0.3s ease;
+			}
+			span {
+				position: absolute;
+				border: solid $colorOne;
+				border-width: 0 1px 1px 0;
+				display: inline-block;
+				padding: 4px;
+				transform: rotate(45deg);
+				right: 25px;
+				top: 0;
+				transition: all 0.3s ease;
+				cursor: pointer;
+			}
+		}
+		&-01 {
+			&::before {
+				background: url("../img/side/side_link_01.svg") 0 0 / cover no-repeat;
+			}
+			&.active{
+				&::before {
+					background: url("../img/icons/money_green.svg") 0 0 / cover no-repeat;
+				}
+			}
+		}
+		&-02 {
+			&::before {
+				background: url("../img/side/side_link_02.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-03 {
+			&::before {
+				background: url("../img/side/side_link_03.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-04 {
+			&::before {
+				background: url("../img/side/side_link_04.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-05 {
+			&::before {
+				background: url("../img/side/side_link_05.png") 0 0 / cover no-repeat;
+			}
+		}
+		&-06 {
+			&::before {
+				background: url("../img/side/side_link_06.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-07 {
+			&::before {
+				background: url("../img/side/side_link_07.svg") 0 0 / cover no-repeat;
+			}
+			&.active{
+				&::before {
+					background: url("../img/icons/pen_green.svg") 0 0 / cover no-repeat;
+				}
+			}
+		}
+		&-08 {
+			&::before {
+				background: url("../img/side/side_link_08.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-09 {
+			&::before {
+				background: url("../img/side/side_link_09.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+	&__item {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__sub-link {
+		color: $colorNine;
+		display: block;
+		padding: 0px 0px 0px 25px;
+		font-size: 14px;
+		&.active {
+			color: $colorTwenty;
+		}
+	}
+
+	&__list {
+		margin: 0px 0px 30px 0px;
+		display: none;
+	}
+
+	&__btn {
+		align-self: center;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 15px;
+			@include adaptiv-value("width", 16, 12, 0);
+			@include adaptiv-value("height", 16, 12, 0);
+			background: url("../img/icons/exit.svg") 0 0 / cover no-repeat;
+			z-index: 1;
+		}
+	}
+}
+
+//...................................................................................................
+
+.bonus-side {
+	position: relative;
+	padding: 30px 80px 30px 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0px 0px 15px 0px;
+	&__label {
+		color: #ffffff;
+		font-size: 18px;
+		position: relative;
+		z-index: 1;
+	}
+	&__price {
+		color: #ffffff;
+		font-size: 32px;
+		font-weight: 500;
+		position: relative;
+		z-index: 1;
+		span {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 10px;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background: url("../img/side/uah.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+
+	&__bg {
+		border-radius: 5px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+//...................................................................................................
+
+.action-side {
+	position: relative;
+	padding: 33px 121px 214px 14px;
+	&__title {
+		color: #ffffff;
+		font-size: 32px;
+		font-weight: 500;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__bg {
+		border-radius: 5px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	&__bgphone {
+		display: none;
+	}
+}

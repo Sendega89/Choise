@@ -1,0 +1,289 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: #fff;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 55px;
+		bottom: 0;
+		left: 0;
+		background-color: #aaaaaa;
+		z-index: -1;
+	}
+	&__container {
+		min-height: 110px;
+	}
+}
+.sub-menu {
+	display: none;
+}
+
+//...................................................................................................
+
+.top-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__column {
+		flex: 0 0 33.333%;
+	}
+
+	&__find {
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 15;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			position: relative;
+			z-index: 20;
+			max-width: 100%;
+		}
+	}
+}
+
+//...................................................................................................
+
+.find-header {
+	position: relative;
+	z-index: 10;
+	&__input {
+		display: inline-block;
+		input {
+			padding: 0px 0px 0px 10px;
+			width: 100%;
+		}
+	}
+	&__label {
+		position: relative;
+		display: inline-block;
+		color: #2a2a2a;
+		font-weight: 500;
+		text-transform: uppercase;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 120%;
+			height: 5px;
+			background-color: #fff;
+			left: 0;
+			bottom: -5px;
+			z-index: 2;
+		}
+	}
+	&__btn {
+		display: inline-block;
+		padding: 0px 0px 2px 0px;
+		position: absolute;
+		bottom: 2px;
+		@include adaptiv-value("left", 253, 240, 0);
+		img {
+			max-width: 100%;
+		}
+	}
+	&::before {
+		content: "";
+		@include adaptiv-value("width", 270, 260, 0);
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: #000;
+	}
+}
+
+//...................................................................................................
+
+.actions-top {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+
+	&__user {
+		transform: scale(1);
+		transition: all 0.3s ease;
+		@include adaptiv-value("margin-right", 30, 15, 0);
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__cart {
+		transform: scale(1);
+		transition: all 0.3s ease;
+		position: relative;
+		@include adaptiv-value("margin-right", 30, 15, 0);
+		img {
+			max-width: 100%;
+		}
+		span {
+			color: $colorThirteen;
+			font-weight: 500;
+			text-transform: uppercase;
+			position: absolute;
+			top: -5px;
+			right: -4px;
+			font-size: 14px;
+		}
+	}
+}
+
+//...................................................................................................
+
+.lang-top {
+	width: 44px;
+	height: 44px;
+	background-color: #d9d9d9;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	&__list {
+		text-align: center;
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 100%;
+		height: 150%;
+		background-color: #d9d9d9;
+		border-radius: 0 0 50px 50px;
+		@include adaptiv-value("padding-top", 15, 5, 0);
+	}
+
+	&__link {
+		display: inline-block;
+		color: #818181;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0px 0px 5px 0px;
+		transition: all 0.3s ease;
+		font-size: 14px;
+		&-arrow {
+			z-index: 1;
+			position: relative;
+			margin: 0;
+		}
+
+		&.active {
+		}
+	}
+}
+
+//...................................................................................................
+
+.menu {
+	&__icon {
+		display: none;
+	}
+	&__arrow {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		transition: all 0.3s ease;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 4px solid #fff;
+		margin: 0px 0px 5px 5px;
+	}
+	&__sub-list {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background-color: #aaaaaa;
+		padding: 15px 15px 15px 15px;
+		min-width: 160px;
+		text-align: right;
+		border-radius: 0 0 10px 10px;
+	}
+
+	&__item {
+		position: relative;
+		transition: all 0.3s ease;
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+	&__sub-item {
+		&:not(:last-child) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__link {
+		color: #ffffff;
+		font-weight: 400;
+		text-transform: uppercase;
+		transition: all 0.3s ease;
+		font-size: 14px;
+	}
+	&__sub-link {
+		color: #ffffff;
+		font-weight: 400;
+		text-transform: uppercase;
+		transition: all 0.3s ease;
+	}
+	&__btn {
+		display: none;
+	}
+}
+
+//...................................................................................................
+
+.lang-menu {
+	display: none;
+	align-items: center;
+	color: $colorSeven;
+	padding: 17px 30px 0px 30px;
+	&__label {
+		margin: 0px 27px 0px 0px;
+		font-size: 14px;
+	}
+	&__lang {
+		font-size: 16px;
+		text-transform: uppercase;
+		&:not(:last-child) {
+			@include adaptiv-value("margin-right", 20, 10, 0);
+		}
+		&.active {
+			padding: 4px;
+			color: #868686;
+			border-radius: 1px;
+			background-color: #d9d9d9;
+		}
+	}
+}
+
+.menu__link-header-active {
+	position: relative;
+	display: block;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: -15px;
+		transform: translate(0, -50%);
+		width: 0;
+		height: 0;
+		transition: all 0.3s ease;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+		border-top: 4px solid #fff;
+	}
+}

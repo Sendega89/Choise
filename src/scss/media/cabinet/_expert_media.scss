@@ -1,0 +1,53 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.expert {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.expert {
+		width: 700px;
+		&__wrapper {
+			height: 300px;
+		}
+	}
+}
+@media (max-width: 1010.98px) {
+	.expert {
+		width: 550px;
+		&__wrapper {
+			height: 250px;
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.expert {
+		width: 700px;
+		margin: 0px auto 15px auto;
+		&__wrapper {
+			height: 300px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.expert {
+		width: 500px;
+		&__wrapper {
+			height: 230px;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.expert {
+		width: 330px;
+		&__column {
+			flex: 0 0 50%;
+		}
+		&__wrapper {
+			height: 250px;
+		}
+	}
+}

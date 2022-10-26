@@ -1,0 +1,62 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.shopping {
+		width: 800px;
+		&__btn {
+			width: 800px;
+		}
+		&__body {
+			overflow-x: scroll;
+		}
+	}
+}
+@media (max-width: 1110.98px) {
+	.shopping {
+		width: 700px;
+		&__btn {
+			width: 700px;
+		}
+	}
+}
+@media (max-width: 1010.98px) {
+	.shopping {
+		width: 550px;
+		&__desctop {
+			display: none;
+		}
+		&__mobile {
+			display: block;
+		}
+		&__btn {
+			width: 550px;
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.shopping {
+		width: 700px;
+		margin: 0px auto 100px auto;
+		&__btn {
+			width: 700px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.shopping {
+		width: 500px;
+		&__btn {
+			width: 500px;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.shopping {
+		width: 330px;
+		&__btn {
+			width: 330px;
+		}
+	}
+}

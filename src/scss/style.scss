@@ -1,0 +1,509 @@
+/*@import "base/variables";*/
+@import "../scss/base/variables";
+@import "../scss/base/mixins";
+@import "../scss/base/null.scss";
+@import "../scss/base/fonts";
+@import "../scss/base/links";
+@import "../scss/base/btn";
+@import "../scss/base/animate";
+
+//............................................................................................................
+
+* {
+	font-family: "Cera Pro";
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+body.lock {
+	overflow: hidden;
+	&::before {
+		content: "";
+		background: rgba(217, 217, 217, 0.9);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 5;
+		transition: all 0.3s ease;
+	}
+}
+
+//............................................................................................................
+
+.page {
+	background-color: #fafafa;
+	padding-top: 110px;
+	@media (max-width: 850.98px) {
+		padding-top: 50px;
+	}
+	&__container {
+		display: flex;
+	}
+
+	//............................................................................................................
+
+	&__side {
+		flex: 0 0 255px;
+		@include adaptiv-value("margin-top", 30, 15, 0);
+		@include adaptiv-value("margin-bottom", 30, 15, 0);
+		@media (max-width: 1199.98px) {
+			flex: 0 0 200px;
+		}
+		@media (max-width: 850.98px) {
+			display: none;
+		}
+	}
+
+	//............................................................................................................
+
+	&__body {
+		@media (max-width: 850.95px) {
+			display: flex;
+			width: 700px;
+			margin: 0 auto 15px auto;
+		}
+		@media (max-width: 767.98px) {
+			width: 500px;
+		}
+		@media (max-width: 575.98px) {
+			width: 330px;
+		}
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+		@media (max-width: 1199.98px) {
+			width: 800px;
+		}
+		@media (max-width: 1110.98px) {
+			width: 700px;
+		}
+		@media (max-width: 1010.98px) {
+			width: 550px;
+		}
+		@media (max-width: 850.95px) {
+			width: 700px;
+			margin: 0 auto 10px auto;
+		}
+		@media (max-width: 767.98px) {
+			width: 500px;
+		}
+		@media (max-width: 575.98px) {
+			width: 330px;
+		}
+	}
+	&__back {
+		padding-right: 40px;
+		font-size: 14px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+			background:url("../assets/img/icons/Arrow.png") 0 0 / cover no-repeat;  // url("../img/icons/Arrow.png") 0 0 / cover no-repeat;
+			width: 27px;
+			height: 9px;
+		}
+	}
+	&__column {
+		@media (max-width: 850.95px) {
+			padding: 0;
+			&:first-child {
+				flex: 0 0 36%;
+				margin-right: 6px;
+			}
+			&:last-child {
+				flex: 0 0 62%;
+			}
+		}
+	}
+
+	//............................................................................................................
+
+	&__content {
+		flex: 1 1 auto;
+		@include adaptiv-value("padding-left", 30, 15, 0);
+		@include adaptiv-value("padding-top", 38, 5, 0);
+		@media (max-width: 850.98px) {
+			padding-left: 0;
+			padding-top: 10px;
+		}
+	}
+
+	//............................................................................................................
+
+	//cabinet
+
+	&__user {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+		&-profile {
+			@include adaptiv-value("margin-bottom", 50, 25, 0);
+		}
+	}
+	&__slider {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__compound {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__referal {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__qualification {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__liders {
+		@include adaptiv-value("margin-bottom", 50, 25, 0);
+	}
+	&__expert {
+		@include adaptiv-value("margin-bottom", 95, 45, 0);
+	}
+	&__review {
+		@include adaptiv-value("margin-bottom", 95, 45, 0);
+	}
+
+	//............................................................................................................
+
+	//dinamic
+
+	&__chart {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__qualification-dinamic {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__volume {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__teamleaders {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__history {
+		@include adaptiv-value("margin-bottom", 105, 45, 0);
+	}
+
+	//............................................................................................................
+
+	//myteam
+
+	&__options {
+		@include adaptiv-value("margin-bottom", 40, 20, 0);
+	}
+	&__filter-team {
+		@include adaptiv-value("margin-bottom", 250, 8, 0);
+	}
+	&__information {
+		@include adaptiv-value("margin-bottom", 105, 45, 0);
+	}
+
+	//............................................................................................................
+
+	//accounts
+
+	&__accounts {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__bonus {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__optima {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__person-value {
+		@include adaptiv-value("margin-bottom", 105, 45, 0);
+	}
+
+	//............................................................................................................
+
+	//receipt
+
+	&__receipt {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+
+	//............................................................................................................
+
+	//media
+
+	&__media-img {
+		@include adaptiv-value("margin-bottom", 15, 8, 0);
+	}
+	&__media-header {
+		@include adaptiv-value("margin-bottom", 40, 20, 0);
+	}
+	&__media-list {
+		@include adaptiv-value("margin-top", 20, 5, 0);
+		@include adaptiv-value("margin-bottom", 65, 40, 0);
+	}
+	&__media-slider-bottom {
+		@include adaptiv-value("margin-bottom", 105, 45, 0);
+	}
+
+	//............................................................................................................
+
+	//marketing
+
+	&__promotion {
+		margin-bottom: 35px;
+	}
+	&__plan {
+		@include adaptiv-value("margin-bottom", 60, 35, 0);
+	}
+	&__marketing-slider {
+		margin-bottom: 100px;
+	}
+
+	//............................................................................................................
+
+	//education
+
+	&__education {
+		@include adaptiv-value("margin-bottom", 50, 30, 0);
+	}
+
+	//............................................................................................................
+
+	//moduleOne
+
+	&__module-one {
+		@include adaptiv-value("margin-bottom", 30, 15, 0);
+	}
+	&__video {
+		@include adaptiv-value("margin-bottom", 70, 25, 0);
+	}
+
+	//............................................................................................................
+
+	//shopping
+
+	&__shopping {
+		@include adaptiv-value("margin-bottom", 100, 25, 0);
+	}
+
+	//............................................................................................................
+	//shoppingSale
+
+	&__shopping-sale {
+		@include adaptiv-value("margin-bottom", 100, 25, 0);
+	}
+}
+
+.container {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.title {
+	text-transform: uppercase;
+	color: #333333;
+	@include adaptiv-value("font-size", 18, 20, 0);
+	font-weight: 500;
+	&-small {
+		color: #333333;
+		@include adaptiv-value("font-size", 24, 20, 0);
+		text-align: center;
+	}
+	&-one {
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+}
+.mark {
+	color: #ffffff;
+	@include adaptiv-value("font-size", 24, 12, 0);
+	font-weight: 300;
+	text-transform: uppercase;
+	@include adaptiv-value("width", 64, 32, 0);
+	@include adaptiv-value("height", 64, 32, 0);
+	background-color: #133215;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.name {
+	color: #133215;
+	@include adaptiv-value("font-size", 24, 20, 0);
+	font-weight: 500;
+	&-green {
+		color: $colorOne;
+	}
+	@media (min-width: 1920.98px) {
+		font-size: 24px;
+	}
+}
+
+/*@import "blocks/header";*/
+@import "./blocks/header";
+@import "./blocks/side";
+
+//............................................................................................................
+
+@import "./blocks/cabinet/user";
+@import "./blocks/cabinet/slider";
+@import "./blocks/cabinet/compound";
+@import "./blocks/cabinet/referal";
+@import "./blocks/cabinet/qualification";
+@import "./blocks/cabinet/liders";
+@import "./blocks/cabinet/expert";
+@import "./blocks/cabinet/review";
+
+//............................................................................................................
+
+@import "./blocks/dinamic/user";
+@import "./blocks/dinamic/chart";
+@import "./blocks/dinamic/qualification-dinamic";
+@import "./blocks/dinamic/volume";
+@import "./blocks/dinamic/teamleaders";
+@import "./blocks/dinamic/history";
+
+//............................................................................................................
+
+@import "./blocks/myTeam/userTeam";
+@import "./blocks/myTeam/options";
+@import "./blocks/myTeam/filterTeam";
+@import "./blocks/myTeam/clientInfo";
+
+//............................................................................................................
+
+@import "blocks/profile/userProfile";
+@import "blocks/profile/information";
+
+//............................................................................................................
+
+@import "blocks/accounts/userAccount";
+@import "blocks/accounts/accounts";
+@import "blocks/accounts/bonus";
+@import "blocks/accounts/optima";
+@import "blocks/accounts/person-value";
+
+//............................................................................................................
+
+@import "blocks/receipt/userReceipt";
+@import "blocks/receipt/receipt";
+
+//............................................................................................................
+
+@import "blocks/media/mediaTop";
+@import "blocks/media/mediaSlider";
+@import "blocks/media/mediaList";
+@import "blocks/media/mediaSliderBottom";
+
+//............................................................................................................
+
+@import "blocks/promotion/promotion";
+@import "blocks/promotion/marketingSlider";
+
+@import "blocks/education/education";
+@import "blocks/education/modules";
+
+//............................................................................................................
+
+@import "blocks/moduleOne/module-one";
+@import "blocks/moduleOne/video";
+
+//............................................................................................................
+
+@import "blocks/shopping/shopping";
+
+//............................................................................................................
+
+@import "blocks/shoppingSale/userShoppingSale";
+@import "blocks/shoppingSale/ShoppingSale";
+
+//............................................................................................................
+
+@import "blocks/footer";
+
+//............................................................................................................
+
+//............................................................................................................
+
+@import "media/header_media";
+
+//............................................................................................................
+
+@import "media/cabinet/user_media";
+@import "media/cabinet/slider_media";
+@import "media/cabinet/compound_media";
+@import "media/cabinet/referals_media";
+@import "media/cabinet/qualification_media";
+@import "media/cabinet/liders_media";
+@import "media/cabinet/expert_media.scss";
+@import "media/cabinet/review_media";
+
+//............................................................................................................
+
+@import "media/dinamic/user_media";
+@import "media/dinamic/chart_media";
+@import "media/dinamic/qualification-dinamic";
+@import "media/dinamic/volume_media";
+@import "media/dinamic/teamleaders_media";
+@import "media/dinamic/history_media";
+
+//............................................................................................................
+
+@import "media/myTeam/user-team_media";
+@import "media/myTeam/options_media";
+@import "media/myTeam/filterTeam_media";
+@import "media/myTeam/clienInfo_media";
+
+//............................................................................................................
+
+@import "media/profile/userProfile_media.scss";
+@import "media/profile/information_media";
+
+//............................................................................................................
+
+@import "media/accounts/userAccounts_media";
+@import "media/accounts/accounts_media";
+@import "media/accounts/bonus_media";
+@import "media/accounts/optima_media";
+@import "media/accounts/person-value_media";
+
+//............................................................................................................
+
+@import "media/receipt/userReceipt";
+@import "media/receipt/receipt_media";
+
+//............................................................................................................
+
+@import "media/media/mediaTop_media";
+@import "media/media/mediaSlider_media";
+@import "media/media/mediaList_media";
+@import "media/media/mediaSliderBottom_media";
+
+//............................................................................................................
+
+@import "media/promotion/promotion__media";
+@import "media/promotion/marketingSlider_media";
+
+@import "media/education/education_media";
+@import "media/education/modules_media";
+
+//............................................................................................................
+
+@import "media/moduleOne/module-one_media";
+@import "media/moduleOne/video_media";
+
+@import "media/shopping/shopping_media";
+@import "media/shoppingSale/ShoppingSale_media.scss";
+//............................................................................................................
+
+@import "media/side_media";
+@import "media/footer_media";
+
+//............................................................................................................
+
+@import "blocks/popup.scss";
+@import "media/popup_media";

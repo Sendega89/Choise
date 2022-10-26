@@ -1,0 +1,49 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.video {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.video {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.video {
+		width: 550px;
+		&__column {
+			&:first-child {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.video {
+		width: 700px;
+		margin: 0px auto 25px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.video {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.video {
+		width: 330px;
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+			&:first-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

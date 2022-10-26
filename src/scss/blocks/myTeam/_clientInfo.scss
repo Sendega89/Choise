@@ -1,0 +1,123 @@
+.client-info {
+	position: absolute;
+	top: 10%;
+	right: 0;
+	text-align: left;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s ease;
+	z-index: 2;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: all;
+		transition: all 0.3s ease;
+	}
+	&__item {
+		background-color: #efefef;
+		border-radius: 5px;
+		padding-top: 35px;
+		@include adaptiv-value("padding-right", 35, 20, 0);
+		@include adaptiv-value("padding-bottom", 35, 15, 0);
+		@include adaptiv-value("padding-left", 35, 20, 0);
+		position: relative;
+		width: 730px;
+	}
+
+	&__title {
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	&__btn {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+		padding-left: 35px;
+		span {
+			position: absolute;
+			top: 50%;
+			left: 5px;
+			z-index: 1;
+			width: 20px;
+			height: 20px;
+			background-color: #ffffff;
+			border-radius: 100%;
+			transform: translate(0, -50%);
+			transition: all 0.3s ease;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: $colorThree;
+				transform: translate(-50%, -50%) rotate(-45deg);
+				width: 50%;
+				height: 2px;
+				transition: all 0.3s ease;
+			}
+			&::before {
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		flex-direction: column;
+	}
+
+	&__unit {
+		color: #878787;
+		font-size: 14px;
+		@include adaptiv-value("margin-bottom", 10, 5, 0);
+		span {
+			color: $colorSeven;
+			font-size: 16px;
+			font-weight: 500;
+			display: inline-block;
+			margin-left: 8px;
+		}
+		&-phone {
+		}
+	}
+
+
+	&__show-structure {
+		align-self: center;
+		width: 185px;
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 12px;
+	}
+}
+
+//................................................................................................................
+
+.social-client-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	&__label {
+		color: #878787;
+		font-size: 14px;
+		@include adaptiv-value("margin-right", 15, 10, 0);
+	}
+
+	&__link {
+		width: 22px;
+		height: 22px;
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+}

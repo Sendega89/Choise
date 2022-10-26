@@ -1,0 +1,85 @@
+.bonus {
+	position: relative;
+
+	&__body {
+		position: relative;
+		z-index: 1;
+		@include adaptiv-value("padding-top", 40, 35, 0);
+		padding-right: 35px;
+		padding-bottom: 35px;
+		@include adaptiv-value("padding-left", 255, 120, 0);
+		text-align: left;
+		&::before {
+			content: "bonus";
+			color: #ffffff;
+			@include adaptiv-value("font-size", 24, 16, 0);
+			text-transform: uppercase;
+			position: absolute;
+			@include adaptiv-value("left", 35, 8, 0);
+			@include adaptiv-value("bottom", 70, 160, 0);
+		}
+	}
+
+	&__title {
+		color: $colorOne;
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	&__reward {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 20, 16, 0);
+		margin-bottom: 5px;
+		span {
+			@include adaptiv-value("font-size", 36, 24, 0);
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				@include adaptiv-value("right", -30, -25, 0);
+				transform: translate(0, -50%);
+				width: 15px;
+				height: 15px;
+				background: url("../img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+
+	&__text {
+		color: $colorNine;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		font-weight: 300;
+		@include adaptiv-value("margin-bottom", 45, 20, 0);
+	}
+
+	&__remains {
+		color: $colorOne;
+		font-size: 14px;
+		width: 371px;
+		border-radius: 24px;
+		background-color: #f7f7f7;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	&__bg {
+		border-radius: 5px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	&__bgphone {
+		display: none;
+		border-radius: 5px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}

@@ -1,0 +1,284 @@
+.input-globe {
+	color: $colorNine;
+	font-size: 14px;
+	@include adaptiv-value("padding-top", 10, 5, 0);
+	@include adaptiv-value("padding-bottom", 10, 5, 0);
+	width: 100%;
+}
+
+//................................................................................................................
+
+.item-info {
+	margin-bottom: 10px;
+	border-radius: 2px;
+	border: 1px solid #c4c4c4;
+	background-color: #ffffff;
+}
+
+//................................................................................................................
+
+.label-information {
+	color: $colorSeven;
+	@include adaptiv-value("font-size", 16, 14, 0);
+	margin-bottom: 10px;
+}
+
+//................................................................................................................
+
+.information {
+	display: flex;
+	flex-direction: column;
+	&__title {
+		margin-bottom: 25px;
+	}
+	&__btn {
+		align-self: center;
+	}
+}
+//.................................................................................................
+
+.main-information {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	@include adaptiv-value("padding-top", 30, 45, 0);
+	@include adaptiv-value("padding-right", 25, 8, 0);
+	@include adaptiv-value("padding-bottom", 45, 35, 0);
+	@include adaptiv-value("padding-left", 25, 8, 0);
+	&__label {
+	}
+	&__select {
+		@include adaptiv-value("padding-top", 11, 5, 0);
+		@include adaptiv-value("padding-bottom", 12, 5, 0);
+		display: inline-block;
+		padding-left: 40px;
+		padding-right: 40px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-color: #ffffff;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px -12.5px;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 12.5px;
+		height: 100%;
+	}
+
+	&__item {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 13px;
+			transform: translate(0, -50%);
+		}
+		&-date {
+			&::before {
+				width: 15px;
+				height: 15px;
+				background: url("../img/information/date.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-mail {
+			&::before {
+				width: 15px;
+				height: 15px;
+				background: url("../img/information/mail.svg") 0 0 / cover no-repeat;
+			}
+		}
+		&-user {
+			&::before {
+				width: 15px;
+				height: 15px;
+				background: url("../img/information/user.svg") 0 0 / cover no-repeat;
+			}
+		}
+	}
+
+	&__input {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+//.................................................................................................
+
+.address {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	@include adaptiv-value("padding-top", 30, 45, 0);
+	@include adaptiv-value("padding-right", 25, 8, 0);
+	@include adaptiv-value("padding-bottom", 45, 35, 0);
+	@include adaptiv-value("padding-left", 25, 8, 0);
+
+	&__label {
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px -12.5px;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 12.5px;
+		height: 100%;
+	}
+
+	&__item {
+	}
+
+	&__input {
+		padding-right: 23px;
+		padding-left: 23px;
+	}
+}
+//.................................................................................................
+
+.password {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	@include adaptiv-value("padding-top", 30, 45, 0);
+	@include adaptiv-value("padding-right", 25, 8, 0);
+	@include adaptiv-value("padding-bottom", 45, 35, 0);
+	@include adaptiv-value("padding-left", 25, 8, 0);
+
+	&__label {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	&__top {
+		border-bottom: 2px solid #c4c4c4;
+		padding-bottom: 10px;
+	}
+
+	&__item {
+		position: relative;
+		width: 331px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 13px;
+			transform: translate(0, -50%);
+			width: 15px;
+			height: 15px;
+			background: url("../img/information/lock.svg") 0 0 / cover no-repeat;
+		}
+	}
+
+	&__input {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px -12.5px;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 12.5px;
+		height: 100%;
+	}
+
+	&__btn {
+	}
+}
+
+//.................................................................................................
+
+.social-links {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	@include adaptiv-value("padding-top", 30, 45, 0);
+	@include adaptiv-value("padding-right", 25, 8, 0);
+	@include adaptiv-value("padding-bottom", 45, 35, 0);
+	@include adaptiv-value("padding-left", 25, 8, 0);
+
+	&__row {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	&__link {
+		margin-right: 15px;
+		img {
+			max-width: 100%;
+		}
+		flex: 0 0 24px;
+		width: 24px;
+		height: 24px;
+	}
+
+	&__item {
+		height: 100%;
+		flex: 0 0 331px;
+		width: 331px;
+		margin-bottom: 0;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 13px;
+			transform: translate(0, -50%);
+			width: 15px;
+			height: 15px;
+			background: url("../img/information/link.svg") 0 0 / cover no-repeat;
+		}
+	}
+
+	&__input {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+//.................................................................................................
+
+.phone-contact {
+	background-color: #fff;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	@include adaptiv-value("padding-top", 30, 45, 0);
+	@include adaptiv-value("padding-right", 25, 8, 0);
+	@include adaptiv-value("padding-bottom", 45, 35, 0);
+	@include adaptiv-value("padding-left", 25, 8, 0);
+
+	&__item {
+		position: relative;
+		width: 331px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 13px;
+			transform: translate(0, -50%);
+			width: 15px;
+			height: 15px;
+			background: url("../img/information/phone.svg") 0 0 / cover no-repeat;
+		}
+	}
+
+	&__input {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}

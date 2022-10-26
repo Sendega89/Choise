@@ -1,0 +1,84 @@
+.modules {
+	&__title {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 24, 20, 0);
+		text-align: center;
+		@include adaptiv-value("margin-bottom", 35, 15, 0);
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		@include adaptiv-value("margin-right", -30, -10, 0);
+		@include adaptiv-value("margin-left", -30, -10, 0);
+	}
+
+	&__column {
+		flex: 0 0 33.333%;
+		@include adaptiv-value("padding-right", 30, 10, 0);
+		@include adaptiv-value("padding-left", 30, 10, 0);
+		@include adaptiv-value("margin-bottom", 50, 30, 0);
+	}
+
+	&__item {
+		height: 100%;
+		border-bottom: 1px solid $colorNine;
+		@include adaptiv-value("padding-bottom", 20, 10, 0);
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+//.............................................................................................
+
+.item-modules {
+	&__top {
+		display: flex;
+		align-items: center;
+		@include adaptiv-value("margin-bottom", 10, 5, 0);
+	}
+
+	&__icon {
+		@include adaptiv-value("width", 24, 20, 0);
+		@include adaptiv-value("height", 24, 20, 0);
+		border-radius: 100%;
+		border: 2px solid $colorTen;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			max-width: 100%;
+		}
+
+		&-black {
+			border: 2px solid $colorEight;
+		}
+	}
+
+	&__percent {
+		color: $colorTen;
+		@include adaptiv-value("font-size", 16, 8, 0);
+		font-weight: 500;
+		@include adaptiv-value("margin-left", 10, 5, 0);
+		@include adaptiv-value("font-size", 16, 14, 0);
+		&-black {
+			color: $colorEight;
+		}
+	}
+
+	&__img {
+		padding: 0px 0px 100% 0px;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	&__label {
+		flex: 1 1 auto;
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		font-weight: 500;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	&__btn {
+		align-self: flex-start;
+	}
+}

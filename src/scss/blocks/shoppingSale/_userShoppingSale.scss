@@ -1,0 +1,39 @@
+.user-shopping-sale {
+	&__item {
+		background-color: #fff;
+		border-radius: 5px;
+		height: 100%;
+		@include adaptiv-value("padding-top", 30, 20, 0);
+		@include adaptiv-value("padding-right", 15, 20, 0);
+		@include adaptiv-value("padding-bottom", 30, 20, 0);
+		@include adaptiv-value("padding-left", 15, 20, 0);
+	}
+
+	&__link {
+		width: 100%;
+		border-radius: 10px;
+		background-color: #fafafa;
+		position: relative;
+		@include adaptiv-value("margin-bottom", 15, 10, 0);
+		transition: all 0.3s ease;
+		display: block;
+		color: #656565;
+		font-size: 14px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: #fafafa;
+		padding-top: 17px;
+		padding-right: 15px;
+		padding-bottom: 17px;
+		padding-left: 60px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 48px;
+			height: 48px;
+			background: url("../img/icons/shopping_icon.svg") 0 0 / cover no-repeat;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+@media (any-hover: hover) {
+	.menu-page{
+		&__link{
+			&:hover{
+				color:$colorOne;
+			}
+		}
+		&__sub-link{
+			&:hover{
+				color:$colorOne;
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 850.98px) {
+	.bonus-side {
+		padding: 15px 25px;
+		margin: 0;
+		height: 100%;
+		&__bg {
+			border-radius: 5px;
+		}
+		&__label {
+			font-size: 12px;
+		}
+	}
+	.action-side {
+		padding: 15px 25px;
+		height: 100%;
+		&__title {
+			max-width: 60px;
+			font-size: 16px;
+		}
+		&__bg {
+			display: none;
+		}
+		&__bgphone {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 5px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.optima {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.optima {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.optima {
+		width: 550px;
+	}
+}
+@media (max-width: 850.98px) {
+	.optima {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.optima {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.optima {
+		width: 330px;
+	}
+}

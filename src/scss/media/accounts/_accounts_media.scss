@@ -1,0 +1,80 @@
+@media (any-hover: hover) {
+	.accounts-reward {
+		&__item {
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+	.item-accounts{
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.accounts {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.accounts {
+		width: 700px;
+	}
+}
+
+@media (max-width: 1010.98px) {
+	.accounts {
+		width: 550px;
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			&:first-child {
+				flex: 1 1 100%;
+				margin: 0;
+				margin-bottom: 15px;
+			}
+			&:last-child {
+				flex: 1 1 100%;
+			}
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.accounts {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.accounts {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.accounts {
+		width: 330px;
+		&__item {
+			padding-right: 15px;
+		}
+	}
+}
+@media (min-width: 1920.98px) {
+	.accounts-reward {
+		&__item {
+			margin-bottom: 15px;
+			&-money {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	.item-accounts {
+		&__money {
+			font-size: 24px;
+		}
+	}
+}

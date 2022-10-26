@@ -1,0 +1,175 @@
+@media (any-hover: hover) {
+	.filter-team {
+		&__name {
+			&:hover {
+				color: $colorOne;
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.filter-team {
+		width: 800px;
+		&__footer {
+			width: 800px;
+		}
+		&__header {
+			width: 800px;
+		}
+		&__body {
+			overflow-x: scroll;
+		}
+	}
+}
+@media (max-width: 1110.98px) {
+	.filter-team {
+		width: 700px;
+		&__footer {
+			width: 700px;
+		}
+		&__header {
+			width: 700px;
+		}
+	}
+}
+@media (max-width: 1010.98px) {
+	.filter-team {
+		width: 550px;
+		&__footer {
+			width: 550px;
+		}
+		&__header {
+			width: 550px;
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.filter-team {
+		width: 700px;
+		margin: 0px auto 15px auto;
+		&__footer {
+			width: 700px;
+		}
+		&__header {
+			width: 700px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.filter-team {
+		width: 500px;
+		&__footer {
+			width: 500px;
+		}
+		&__header {
+			width: 500px;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.filter-team {
+		width: 330px;
+		&__footer {
+			width: 330px;
+		}
+		&__header {
+			width: 330px;
+		}
+		&__btn {
+			&-plus {
+				width: 163px;
+			}
+		}
+	}
+	.item-filter {
+		width: 330px;
+	}
+	.form-filter {
+		&__label {
+			font-size: 12px;
+		}
+		&__item {
+			&-range {
+				padding-top: 10px;
+				padding-right: 12px;
+				padding-bottom: 10px;
+				padding-left: 12px;
+			}
+			&-select2 {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 5px;
+				padding-right: 12px;
+				padding-bottom: 5px;
+				padding-left: 12px;
+				align-items: center;
+			}
+			&-checkbox {
+			}
+			&-checkbox1 {
+				position: relative;
+			}
+			&-checkbox2 {
+				position: relative;
+			}
+			&-id1 {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 5px;
+				padding-right: 12px;
+				padding-bottom: 5px;
+				padding-left: 12px;
+				align-items: center;
+			}
+		}
+	}
+	.checkbox {
+		padding-top: 10px;
+		padding-right: 12px;
+		padding-bottom: 10px;
+		padding-left: 12px;
+		&__label {
+			font-size: 12px;
+		}
+	}
+	.checkbox1 {
+		padding-top: 10px;
+		padding-right: 12px;
+		padding-bottom: 10px;
+		padding-left: 12px;
+		&__label1 {
+			font-size: 12px;
+		}
+		&__label {
+			&-list1 {
+				font-size: 12px;
+			}
+		}
+	}
+	.checkbox2 {
+		padding-top: 10px;
+		padding-right: 12px;
+		padding-bottom: 10px;
+		padding-left: 12px;
+		&__label2 {
+			font-size: 12px;
+		}
+		&__label {
+			&-list2 {
+				font-size: 12px;
+			}
+		}
+	}
+	.id1 {
+		&__label1 {
+			font-size: 12px;
+		}
+	}
+	.item-select2 {
+		&__label {
+			font-size: 12px;
+		}
+	}
+}

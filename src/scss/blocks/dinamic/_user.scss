@@ -1,0 +1,18 @@
+.actions-user {
+	&__column-dinamic {
+		flex: 0 0 100%;
+	}
+
+	&__title-dinamic {
+		color: #333333;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 120%;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	&__icon-dinamic {
+		background-color: $colorFive;
+		margin: 0px auto;
+	}
+}

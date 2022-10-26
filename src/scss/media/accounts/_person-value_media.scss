@@ -1,0 +1,46 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.person-value {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.person-value {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.person-value {
+		width: 550px;
+	}
+}
+@media (max-width: 850.98px) {
+	.person-value {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.person-value {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.person-value {
+		width: 330px;
+	}
+	.item-person-value {
+		&__volume {
+			font-size: 12px;
+		}
+		&__reward {
+			font-size: 12px;
+			&::before {
+				right: -5px;
+			}
+		}
+	}
+}

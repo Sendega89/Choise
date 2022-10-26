@@ -1,0 +1,52 @@
+.top-education {
+	&__row {
+		display: flex;
+		margin: 0px -10px;
+	}
+
+	&__column {
+		flex: 0 0 26.3%;
+		padding: 0px 10px;
+		&:first-child {
+			flex: 0 0 43.03%;
+		}
+	}
+
+	&__img {
+		border-radius: 5px;
+		width: 216px;
+		height: 288px;
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+			border-radius: 5px;
+		}
+		&-big {
+			width: 355px;
+		}
+	}
+}
+
+//................................................................................................
+
+.bottom-education {
+	background-color: #fff;
+	border-radius: 5px;
+	padding-top: 80px;
+	padding-right: 45px;
+	padding-bottom: 60px;
+	padding-left: 45px;
+	margin-top: -40px;
+	&__text {
+		width: 100%;
+		color: $colorNine;
+		font-size: 14px;
+		line-height: 160%;
+		@include adaptiv-value("margin-bottom", 30, 15, 0);
+	}
+
+	&__btn {
+		@include adaptiv-value("margin-top", 70, 55, 0);
+	}
+}

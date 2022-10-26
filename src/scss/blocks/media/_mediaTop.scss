@@ -1,0 +1,27 @@
+.media-img__wrapper {
+	padding: 0px 0px 20.24% 0px;
+	border-radius: 5px;
+}
+
+//................................................................................................................
+
+.media-header {
+	&__label {
+		color: $colorSeven;
+		@include adaptiv-value("font-size", 16, 14, 0);
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__btn {
+		width: 144px;
+		font-weight: 400;
+		padding-left: 0;
+		padding-right: 0;
+		@include adaptiv-value("margin-right", 10, 7, 0);
+	}
+}

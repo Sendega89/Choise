@@ -1,0 +1,14 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.user-receipt {
+		flex-direction: row;
+		&__top {
+			flex: 0 0 50%;
+		}
+		&__sum {
+			flex: 0 0 50%;
+			justify-content: flex-end;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+@media (any-hover: hover) {
+	.actions-user {
+		&__item {
+			&:hover {
+				.actions-user__title {
+					color: #000;
+				}
+				.actions-user__icon {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.user {
+		width: 800px;
+		&__row {
+			display: block;
+		}
+		&__column {
+			&:first-child {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+	.actions-user {
+		padding: 15px 0;
+	}
+}
+@media (max-width: 1110.98px) {
+	.user {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.user {
+		width: 550px;
+	}
+}
+@media (max-width: 850.98px) {
+	.user {
+		width: 700px;
+		margin: 0px auto 15px auto;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.user {
+		width: 500px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.user {
+		width: 330px;
+	}
+	.actions-user {
+		&__title {
+			font-size: 14px;
+		}
+	}
+	.item-user {
+		&__label {
+			font-size: 12px;
+		}
+	}
+}

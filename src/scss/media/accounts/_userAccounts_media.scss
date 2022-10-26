@@ -1,0 +1,67 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.user-reward {
+		flex-direction: row;
+		&__top {
+			flex: 0 0 50%;
+		}
+		&__sum {
+			flex: 0 0 50%;
+		}
+		&__sum {
+			&::before {
+				right: 29%;
+			}
+		}
+	}
+}
+@media (max-width: 1110.98px) {
+	.user-reward {
+		&__sum {
+			&::before {
+				right: 28%;
+			}
+		}
+	}
+}
+@media (max-width: 1010.98px) {
+	.user-reward {
+		&__sum {
+			&::before {
+				right: 22%;
+				transform: translate(0, -40%);
+			}
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.user-reward {
+		&__sum {
+			&::before {
+				right: 28%;
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.user-reward {
+		&__sum {
+			&::before {
+				right: 19%;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.user-reward {
+		&__sum {
+			&::before {
+				right: 3%;
+				transform: translate(0, -45%);
+			}
+		}
+	}
+}

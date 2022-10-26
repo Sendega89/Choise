@@ -1,0 +1,52 @@
+.history {
+	background-color: #fff;
+	border-radius: 5px;
+	@include adaptiv-value("padding-top", 24, 12, 0);
+	@include adaptiv-value("padding-right", 35, 17, 0);
+	@include adaptiv-value("padding-bottom", 30, 15, 0);
+	@include adaptiv-value("padding-left", 35, 17, 0);
+	&__row {
+		display: flex;
+		@include adaptiv-value("margin-right", -25, -13, 0);
+		@include adaptiv-value("margin-left", -25, -13, 0);
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		@include adaptiv-value("padding-right", 25, 13, 0);
+		@include adaptiv-value("padding-left", 25, 13, 0);
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		text-align: center;
+		@include adaptiv-value("margin-bottom", 35, 17, 0);
+	}
+
+	&__item {
+		@include adaptiv-value("padding-bottom", 20, 10, 0);
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+		border-bottom: 1px solid #f7f7f7;
+	}
+
+	&__date {
+		display: inline-block;
+		color: $colorTwelve;
+		font-size: 14px;
+		white-space: nowrap;
+		@include adaptiv-value("margin-right", 70, 15, 0);
+	}
+
+	&__label {
+		display: inline-block;
+		color: $colorSeven;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: left;
+	}
+
+	&__btn {
+		align-self: center;
+	}
+}

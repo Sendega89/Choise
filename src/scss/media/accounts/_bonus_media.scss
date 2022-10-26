@@ -1,0 +1,108 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.bonus {
+		width: 800px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.bonus {
+		width: 700px;
+	}
+}
+@media (max-width: 1010.98px) {
+	.bonus {
+		width: 550px;
+		&__bg {
+			display: none;
+		}
+		&__bgphone {
+			display: block;
+		}
+	}
+}
+@media (max-width: 850.98px) {
+	.bonus {
+		width: 700px;
+		margin: 0px auto 15px auto;
+		&__bg {
+			display: block;
+		}
+		&__bgphone {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.bonus {
+		width: 500px;
+		&__bg {
+			display: none;
+		}
+		&__bgphone {
+			display: block;
+		}
+		&__reward {
+			line-height: 150%;
+			span {
+				margin-left: 165px;
+			}
+		}
+		&__remains {
+			margin-left: -85px;
+		}
+	}
+}
+@media (max-width: 712.98px) {
+	.bonus {
+		&__reward {
+			span {
+				display: block;
+				text-align: center;
+				margin-left: 0;
+				margin-top: 5px;
+				&::before {
+					right: 105px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.bonus {
+		width: 330px;
+		&__body {
+			padding-left: 75px;
+			&::before {
+				bottom: 160px;
+				left: 5px;
+			}
+		}
+		&__reward {
+			line-height: 100%;
+			span {
+				display: inline-block;
+				text-align: center;
+				&::before {
+					right: -20px;
+				}
+			}
+		}
+		&__remains {
+			margin-left: -65px;
+			width: 310px;
+		}
+	}
+}
+@media (min-width: 1920.98px){
+	.bonus{
+		&__body{
+			&::before{
+				bottom: 50%;
+				left: 25px;
+			}
+		}
+	}
+}

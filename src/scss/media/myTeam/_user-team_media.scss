@@ -1,0 +1,32 @@
+@media (any-hover: hover) {
+	.actions-user-team {
+		&__item{
+			&:hover{
+				.actions-user-team__icon{
+					transform: scale(1.08);
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.actions-user-team {
+		align-items: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		&__column {
+			margin: 0;
+		}
+		&__title{
+			max-width: 100%;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

@@ -1,0 +1,83 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.volume {
+		width: 800px;
+	}
+	.left-chart {
+		margin-bottom: 30px;
+		width: 300px;
+	}
+	.right-chart {
+		width: 300px;
+	}
+}
+@media (max-width: 1110.98px) {
+	.volume {
+		width: 700px;
+		&__title {
+			margin-left: 0;
+		}
+	}
+}
+@media (max-width: 1010.98px) {
+	.volume {
+		width: 550px;
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 0 0 100%;
+		}
+	}
+	.left-chart {
+		width: 500px;
+	}
+	.right-chart {
+		width: 500px;
+	}
+}
+@media (max-width: 850.98px) {
+	.volume {
+		width: 700px;
+		margin: 0 auto 15px auto;
+		&__column {
+			flex: 0 0 50%;
+		}
+	}
+	.left-chart {
+		width: 300px;
+	}
+	.right-chart {
+		width: 300px;
+	}
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+	.volume {
+		width: 500px;
+		&__column {
+			flex: 0 0 100%;
+		}
+	}
+	.left-chart {
+		width: 450px;
+	}
+	.right-chart {
+		width: 450px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.volume {
+		width: 330px;
+	}
+	.left-chart {
+		width: 290px;
+	}
+	.right-chart {
+		width: 290px;
+	}
+}

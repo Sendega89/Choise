@@ -1,0 +1,132 @@
+.qualification {
+	&__row {
+		display: flex;
+		margin: 0px -10px;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 10px;
+	}
+
+	&__item {
+		height: 100%;
+	}
+	&__body {
+		height: 100%;
+	}
+}
+
+//................................................................................................................
+
+.item-qualification {
+	background-color: #fff;
+	border-radius: 5px;
+	@include adaptiv-value("padding-top", 15, 8, 0);
+	@include adaptiv-value("padding-right", 45, 22, 0);
+	@include adaptiv-value("padding-bottom", 20, 10, 0);
+	@include adaptiv-value("padding-left", 45, 22, 0);
+	&-main {
+		background-color: #fff;
+		border-radius: 5px;
+	}
+
+	&__title {
+		line-height: 112%;
+		@include adaptiv-value("margin-bottom", 20, 10, 0);
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px -20px;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 20px;
+	}
+	&__item {
+		border-radius: 10px;
+		border: 1px solid rgba(153, 153, 153, 0.15);
+		background-color: #f7f7f7;
+		@include adaptiv-value("padding-top", 12, 6, 0);
+		@include adaptiv-value("padding-right", 20, 10, 0);
+		@include adaptiv-value("padding-bottom", 12, 6, 0);
+		@include adaptiv-value("padding-left", 20, 10, 0);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		&.active {
+			border: 1px solid rgba(181, 199, 117, 0.39);
+			background-color: rgba(181, 199, 117, 0.12);
+		}
+	}
+
+	&__icon {
+		z-index: 1;
+		position: absolute;
+		top: -10%;
+		left: -5%;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		color: $colorEleven;
+		line-height: 120%;
+		flex: 1 1 auto;
+		&.active {
+			color: #133215;
+		}
+	}
+}
+
+//...................................................................................................
+
+.top-qualification {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	border-radius: 5px;
+	@include adaptiv-value("padding-top", 15, 8, 0);
+	@include adaptiv-value("padding-right", 30, 15, 0);
+	@include adaptiv-value("padding-bottom", 15, 8, 0);
+	@include adaptiv-value("padding-left", 30, 15, 0);
+	@include adaptiv-value("margin-bottom", 20, 10, 0);
+	&__title {
+		color: $colorEight;
+		@include adaptiv-value("font-size", 20, 16, 0);
+		font-weight: 300;
+	}
+}
+
+//...................................................................................................
+
+.bottom-qualification {
+	background-color: #fff;
+	border-radius: 5px;
+	@include adaptiv-value("padding-top", 30, 15, 0);
+	@include adaptiv-value("padding-right", 30, 15, 0);
+	@include adaptiv-value("padding-bottom", 30, 15, 0);
+	@include adaptiv-value("padding-left", 30, 15, 0);
+}
+
+//...................................................................................................
+
+.item-bottom-qualification {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 49px;
+	background-color: #f7f7f7;
+	&__label {
+		color: #575756;
+		font-weight: 500;
+		text-transform: uppercase;
+		@include adaptiv-value("font-size", 14, 12, 0);
+		@include adaptiv-value("padding-left", 25, 12, 0);
+	}
+}

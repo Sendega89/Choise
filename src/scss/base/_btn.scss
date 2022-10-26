@@ -1,0 +1,210 @@
+.btn {
+	width: 100%;
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: left;
+	@include adaptiv-value("padding-top", 16, 8, 0);
+	@include adaptiv-value("padding-right", 30, 15, 0);
+	@include adaptiv-value("padding-bottom", 12, 6, 0);
+	@include adaptiv-value("padding-left", 60, 30, 0);
+	font-size: 14px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		@include adaptiv-value("left", 28, 14, 0);
+		@include adaptiv-value("width", 20, 10, 0);
+		@include adaptiv-value("height", 20, 10, 0);
+	}
+	&-menugreen {
+		background-color: $colorOne;
+		&::before {
+			background: url("../img/icons/menu_user.svg") 0 0 / cover no-repeat;
+		}
+	}
+	&-menugray {
+		background-color: #aaaaaa;
+		&::before {
+			background: url("../img/icons/menu_cart.svg") 0 0 / cover no-repeat;
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	@media(min-width:1920.98px){
+		padding-top: 16px;
+		padding-right: 30px;
+		padding-bottom: 12px;
+		padding-left: 60px;
+	}
+}
+
+.btn-side {
+	color: #ffffff;
+	border-radius: 50px;
+	background-color: $colorOne;
+	padding-top: 7px;
+	@include adaptiv-value("padding-right", 70, 35, 0);
+	padding-bottom: 7px;
+	@include adaptiv-value("padding-left", 70, 35, 0);
+	font-size: 14px;
+	@media(min-width:1920.98px){
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+}
+
+.btn-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-weight: 500;
+	@include adaptiv-value("font-size", 14, 12, 0);
+	text-transform: uppercase;
+	border-radius: 49px;
+	background-color: $colorTwo;
+	padding-top: 5px;
+	@include adaptiv-value("padding-right", 20, 10, 0);
+	padding-bottom: 5px;
+	@include adaptiv-value("padding-left", 20, 10, 0);
+	transition: all 0.3s ease;
+	position: relative;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $colorOne;
+		}
+	}
+	@media(min-width:1920.98px){
+		font-size: 14px;
+	}
+	&-blue {
+		@include adaptiv-value("font-size", 10, 5, 0);
+		@include adaptiv-value("padding-top", 10, 5, 0);
+		@include adaptiv-value("padding-right", 15, 5, 0);
+		@include adaptiv-value("padding-bottom", 10, 5, 0);
+		@include adaptiv-value("padding-left", 15, 5, 0);
+		font-size: 10px;
+		background-color: $colorThree;
+		border-radius: 70px;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $colorFour;
+			}
+		}
+		@media(min-width:1920.98px){
+			font-size: 10px;
+		}
+	}
+	&-brown {
+		background-color: $colorFive;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #d2ad89;
+			}
+		}
+	}
+	&-gray {
+		background-color: $colorSix;
+	}
+	&-plus {
+		@include adaptiv-value("padding-right", 60, 15, 0);
+		@include adaptiv-value("padding-left", 60, 30, 0);
+		padding-top: 8px;
+		padding-bottom: 8px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		span {
+			position: absolute;
+			top: 50%;
+			left: 4px;
+			z-index: 1;
+			width: 22px;
+			height: 22px;
+			background-color: #ffffff;
+			border-radius: 100%;
+			transform: translate(0, -50%);
+			transition: all 0.3s ease;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-color: $colorThree;
+				transform: translate(-50%, -50%);
+				width: 50%;
+				height: 2px;
+				transition: all 0.3s ease;
+			}
+			&::before {
+				transform: translate(-50%, -50%) rotate(90deg);
+			}
+		}
+		@media (max-width: 575.98px) {
+			font-size: 11px;
+			
+		}
+		&.active {
+			span {
+				transition: all 0.3s ease;
+				&::after {
+					transform: translate(-50%, -50%) rotate(-45deg);
+					transition: all 0.3s ease;
+				}
+				&::before {
+					transform: translate(-50%, -50%) rotate(45deg);
+					transition: all 0.3s ease;
+				}
+			}
+		}
+		@media(min-width:1920.98px){
+			padding-right: 40px;
+			padding-left: 40px;
+			span{
+				left: 6px;
+			}
+		}
+	}
+	&-find {
+		@include adaptiv-value("padding-right", 60, 15, 0);
+		@include adaptiv-value("padding-left", 60, 25, 0);
+		background-color: $colorThree;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 4px;
+			transform: translate(0, -60%);
+			background: url("../img/icons/search_icon_w.png") 0 0 / cover no-repeat;
+			width: 19px;
+			height: 17px;
+		}
+		@media (max-width: 575.98px) {
+			font-size: 11px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $colorFour;
+			}
+		}
+		@media(min-width:1920.98px){
+			padding-right: 50px;
+			padding-left: 50px;
+			&::before {
+				left: 8px;
+			}
+		}
+	}
+	&-dark {
+		background-color: $colorEight;
+	}
+	
+}
