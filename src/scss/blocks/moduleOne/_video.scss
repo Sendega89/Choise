@@ -1,7 +1,7 @@
 .video {
 	&__video {
 		position: relative;
-		padding: 0px 0px 50% 0px;
+		padding: 0 0 50% 0;
 		border-radius: 5px;
 		@include adaptiv-value("margin-bottom", 20, 15, 0);
 		video,

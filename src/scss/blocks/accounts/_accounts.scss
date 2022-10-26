@@ -6,7 +6,7 @@
 	&__column {
 		&:first-child {
 			flex: 0 0 59.03%;
-			margin: 0px 16px 0px 0px;
+			margin: 0 16px 0 0;
 		}
 		&:last-child {
 			flex: 0 0 39.03%;
@@ -74,12 +74,12 @@
 			top: 50%;
 			right: -15px;
 			transform: translate(0, -50%);
-			background: url("../img/icons/uah_green.svg") 0 0 / cover no-repeat;
+			background: url("../src/assets/img/icons/uah_green.svg") 0 0 / cover no-repeat;
 			z-index: 1;
 		}
 		&-euro {
 			&::before {
-				background: url("../img/accounts/euro.svg") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/accounts/euro.svg") 0 0 / cover no-repeat;
 			}
 		}
 	}
@@ -122,17 +122,17 @@ transition: all 0.3s ease;
 		}
 		&-money {
 			&::before {
-				background: url("../img/accounts/money.svg") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/accounts/money.svg") 0 0 / cover no-repeat;
 			}
 		}
 		&-transfer {
 			&::before {
-				background: url("../img/accounts/transfer.png") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/accounts/transfer.png") 0 0 / cover no-repeat;
 			}
 		}
 		&-convert {
 			&::before {
-				background: url("../img/accounts/convert.svg") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/accounts/convert.svg") 0 0 / cover no-repeat;
 			}
 		}
 	}

@@ -86,21 +86,21 @@
 			&::before {
 				width: 15px;
 				height: 15px;
-				background: url("../img/information/date.svg") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/information/date.svg") 0 0 / cover no-repeat;
 			}
 		}
 		&-mail {
 			&::before {
 				width: 15px;
 				height: 15px;
-				background: url("../img/information/mail.svg") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/information/mail.svg") 0 0 / cover no-repeat;
 			}
 		}
 		&-user {
 			&::before {
 				width: 15px;
 				height: 15px;
-				background: url("../img/information/user.svg") 0 0 / cover no-repeat;
+				background: url("../src/assets/img/information/user.svg") 0 0 / cover no-repeat;
 			}
 		}
 	}
@@ -176,7 +176,7 @@
 			transform: translate(0, -50%);
 			width: 15px;
 			height: 15px;
-			background: url("../img/information/lock.svg") 0 0 / cover no-repeat;
+			background: url("../src/assets/img/information/lock.svg") 0 0 / cover no-repeat;
 		}
 	}
 
@@ -241,7 +241,7 @@
 			transform: translate(0, -50%);
 			width: 15px;
 			height: 15px;
-			background: url("../img/information/link.svg") 0 0 / cover no-repeat;
+			background: url("../src/assets/img/information/link.svg") 0 0 / cover no-repeat;
 		}
 	}
 
@@ -273,7 +273,7 @@
 			transform: translate(0, -50%);
 			width: 15px;
 			height: 15px;
-			background: url("../img/information/phone.svg") 0 0 / cover no-repeat;
+			background: url("../src/assets/img/information/phone.svg") 0 0 / cover no-repeat;
 		}
 	}
 

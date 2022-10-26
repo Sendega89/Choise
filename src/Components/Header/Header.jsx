@@ -1,4 +1,10 @@
 import React from 'react';
+import search from "../../assets/img/icons/search.svg";
+import logo from "../../assets/img/icons/logo.svg";
+import user from "../../assets/img/icons/user.svg";
+import cart from "../../assets/img/icons/cart.svg";
+import prev_arrow from "../../assets/img/mediaSliderBottom/prev_arrow.png";
+
 
 const Header = () => {
     return <header className="header">
@@ -12,21 +18,21 @@ const Header = () => {
                                 <input type="text"/>
                             </div>
                             <button type="submit" className="find-header__btn">
-                                <img src="img/icons/search.svg"alt="search"/>
+                                <img src={search} alt="search"/>
                             </button>
                         </form>
                     </div>
                     <div className="top-header__column">
                         <a href="#" className="top-header__logo">
-                            <img src="img/icons/logo.svg" alt="logo"/></a>
+                            <img src={logo} alt="logo"/></a>
                     </div>
                     <div className="top-header__column">
                         <div className="top-header__actions actions-top">
                             <a href="#" className="actions-top__user">
-                                <img src="img/icons/user.svg" alt="user"/>
+                                <img src={user} alt="user"/>
                             </a>
                             <a href="#" className="actions-top__cart">
-                                <img src="img/icons/cart.svg" alt="cart"/>
+                                <img src={cart} alt="cart"/>
                                 <span>0</span>
                             </a>
                             <div className="actions-top__lang lang-top">
@@ -116,8 +122,9 @@ const Header = () => {
                         </div>
                         <div className="sub-menu">
                             <div className="sub-menu__back">
-                                <div className="sub-menu__arrow"><img src="img/mediaSliderBottom/prev_arrow.png"
-                                                                      alt="prev_arrow"/></div>
+                                <div className="sub-menu__arrow">
+                                    <img src={prev_arrow} alt="prev_arrow"/></div>
+
                                 <div className="sub-menu__label">Назад</div>
                             </div>
                             <div className="sub-menu__title">КРАСОТА<span></span></div>

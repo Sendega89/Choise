@@ -33,7 +33,7 @@
 
 	&__column {
 		flex: 0 0 30%;
-		padding: 0px 12px;
+		padding: 0 12px;
 		height: 100%;
 	}
 
@@ -86,7 +86,7 @@
 	}
 
 	&__img {
-		padding: 0px 0px 100% 0px;
+		padding: 0 0 100% 0;
 		@include adaptiv-value("margin-bottom", 20, 10, 0);
 	}
 

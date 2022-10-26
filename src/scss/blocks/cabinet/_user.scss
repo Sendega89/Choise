@@ -6,7 +6,7 @@
 	&__column {
 		&:first-child {
 			flex: 0 0 59.03%;
-			margin: 0px 16px 0px 0px;
+			margin: 0 16px 0 0;
 		}
 		&:last-child {
 			flex: 0 0 39.03%;
@@ -27,7 +27,7 @@
 		&:first-child {
 			flex: 0 0 123px;
 			width: 123px;
-			margin: 0px 24px 0px 0px;
+			margin: 0 24px 0 0;
 			position: relative;
 		}
 		&:last-child {
@@ -36,7 +36,7 @@
 	}
 
 	&__photo {
-		padding: 0px 0px 100% 0px;
+		padding: 0 0 100% 0;
 		border-radius: 100%;
 	}
 
@@ -50,7 +50,7 @@
 			position: absolute;
 			top: 0;
 			left: -30px;
-			background: url("../img/icons/flag.svg") 0 0 no-repeat;
+			background: url("../src/assets/img/icons/flag.svg") 0 0 no-repeat;
 			width: 21px;
 			height: 13px;
 		}
@@ -62,7 +62,7 @@
 	}
 
 	&__name {
-		margin: 10px 0px 5px 0px;
+		margin: 10px 0 5px 0;
 	}
 
 	&__phone {
@@ -92,7 +92,7 @@
 		width: 51px;
 		height: 51px;
 		border-radius: 10px;
-		margin: 0px auto;
+		margin: 0 auto;
 		transition: all 0.3s ease;
 		
 		&-brown {
@@ -108,7 +108,7 @@
 
 	&__title {
 		color: #656565;
-		margin: 10px 0px 0px 0px;
+		margin: 10px 0 0 0;
 		transition: all 0.3s ease;
 	}
 }

@@ -20,7 +20,7 @@
 		}
 		&__column {
 			&:first-child {
-				margin: 0px 0px 20px 0px;
+				margin: 0 0 20px 0;
 			}
 		}
 	}
@@ -41,7 +41,7 @@
 @media (max-width: 850.98px) {
 	.user {
 		width: 700px;
-		margin: 0px auto 15px auto;
+		margin: 0 auto 15px auto;
 	}
 }
 
