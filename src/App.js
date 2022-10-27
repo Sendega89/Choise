@@ -4,15 +4,12 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
     return (
-        <body className={"pc"}>
-
 
         <div className="wrapper">
             <Header/>
             <Main/>
             <Footer/>
         </div>
-        </body>
     );
 }
 
