@@ -22,13 +22,13 @@
 	&-menugreen {
 		background-color: $colorOne;
 		&::before {
-			/*background: url("../../assets/img/icons/menu_user.svg") 0 0 / cover no-repeat;*/
+			background: url("../../assets/img/icons/menu_user.svg") 0 0 / cover no-repeat;
 		}
 	}
 	&-menugray {
 		background-color: #aaaaaa;
 		&::before {
-			/*background: url("../../assets/img/icons/menu_cart.svg") 0 0 / cover no-repeat;*/
+			background: url("../../assets/img/icons/menu_cart.svg") 0 0 / cover no-repeat;
 		}
 	}
 	@media (any-hover: hover) {
@@ -183,7 +183,7 @@
 			top: 50%;
 			left: 4px;
 			transform: translate(0, -60%);
-			/*background: url("../../assets/img/icons/search_icon_w.png") 0 0 / cover no-repeat;*/
+			background: url("../../assets/img/icons/search_icon_w.png") 0 0 / cover no-repeat;
 			width: 19px;
 			height: 17px;
 		}

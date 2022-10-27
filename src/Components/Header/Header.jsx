@@ -52,11 +52,10 @@ const Header = () => {
             </div>
             <div className="header__bottom bottom-header">
                 <div className="bottom-header__menu menu">
-                    <div className="menu__icon">
+                    <div className="menu__icon " > {/*active*/}
                         <span></span>
                     </div>
-
-                    <nav className="menu__body">
+                    <nav className="menu__body "> {/*active*/}
                         <ul className="menu__list">
                             <li className="menu__item">
                                 <a href="#" className="menu__link menu__link-header-active">магазин</a>

@@ -94,6 +94,7 @@ h6 {
   left: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 3;
 }
 
 .btn {
@@ -122,13 +123,13 @@ h6 {
   background-color: #7a934f;
 }
 .btn-menugreen::before {
-  /*background: url("../../assets/img/icons/menu_user.svg") 0 0 / cover no-repeat;*/
+  background: url("../../assets/img/icons/menu_user.svg") 0 0/cover no-repeat;
 }
 .btn-menugray {
   background-color: #aaaaaa;
 }
 .btn-menugray::before {
-  /*background: url("../../assets/img/icons/menu_cart.svg") 0 0 / cover no-repeat;*/
+  background: url("../../assets/img/icons/menu_cart.svg") 0 0/cover no-repeat;
 }
 @media (min-width: 1920.98px) {
   .btn {
@@ -287,7 +288,7 @@ h6 {
   top: 50%;
   left: 4px;
   transform: translate(0, -60%);
-  /*background: url("../../assets/img/icons/search_icon_w.png") 0 0 / cover no-repeat;*/
+  background: url("../../assets/img/icons/search_icon_w.png") 0 0/cover no-repeat;
   width: 19px;
   height: 17px;
 }
@@ -511,7 +512,7 @@ h6 {
 }
 
 * {
-  font-family: "Cera Pro";
+  font-family: "Cera Pro", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -780,6 +781,7 @@ body.lock::before {
 }
 .title-one {
   margin-bottom: calc(10px + 10 * ((100vw - 320px) / 1600));
+  margin-top: calc(10px + 10 * ((100vw - 320px) / 1600));
 }
 
 .mark {
@@ -1301,7 +1303,8 @@ body.lock::before {
   flex: 1 1 auto;
 }
 .item-user__photo {
-  padding: 0 0 100% 0;
+  /*padding: 0 0 100% 0;*/
+  padding: 0;
   border-radius: 100%;
 }
 .item-user__label {
@@ -1315,7 +1318,7 @@ body.lock::before {
   position: absolute;
   top: 0;
   left: -30px;
-  /*background: url("../src/assets/img/icons/flag.svg") 0 0 no-repeat;*/
+  background: url("../../../assets/img/icons/flag.svg") 0 0 no-repeat;
   width: 21px;
   height: 13px;
 }

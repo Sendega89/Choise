@@ -12,7 +12,7 @@
 //............................................................................................................
 
 * {
-	font-family: "Cera Pro";
+	font-family: "Cera Pro", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -318,6 +318,7 @@ body.lock {
 	}
 	&-one {
 		@include adaptiv-value("margin-bottom", 20, 10, 0);
+		@include adaptiv-value("margin-top", 20, 10, 0);///добавил отступ как в фигме
 	}
 }
 .mark {
