@@ -1,11 +1,13 @@
-
 @import "base/variables";
 @import "base/mixins";
 @import "base/null.scss";
-@import "base/fonts";
+/*@import "base/fonts";*/
 @import "base/links";
 @import "base/btn";
 @import "base/animate";
+@import "base/media";
+
+
 
 //............................................................................................................
 
@@ -111,7 +113,7 @@ body.lock {
 			top: 50%;
 			right: 0;
 			transform: translate(0, -50%);
-			background:url("../assets/img/icons/Arrow.png") 0 0 / cover no-repeat;  // url("../img/icons/Arrow.png") 0 0 / cover no-repeat;
+			background:url("../assets/img/icons/Arrow.png") 0 0 / cover no-repeat;
 			width: 27px;
 			height: 9px;
 		}
@@ -175,7 +177,7 @@ body.lock {
 
 	//............................................................................................................
 
-	//dinamic
+	//dynamic
 
 	&__chart {
 		@include adaptiv-value("margin-bottom", 15, 8, 0);
@@ -195,7 +197,7 @@ body.lock {
 
 	//............................................................................................................
 
-	//myteam
+	//myTeam
 
 	&__options {
 		@include adaptiv-value("margin-bottom", 40, 20, 0);
@@ -343,36 +345,36 @@ body.lock {
 	}
 }
 
-/*@import "blocks/header";*/
-@import "./blocks/header";
-@import "./blocks/side";
+
+@import "blocks/header";
+@import "blocks/side";
 
 //............................................................................................................
 
-@import "./blocks/cabinet/user";
-@import "./blocks/cabinet/slider";
-@import "./blocks/cabinet/compound";
-@import "./blocks/cabinet/referal";
-@import "./blocks/cabinet/qualification";
-@import "./blocks/cabinet/liders";
-@import "./blocks/cabinet/expert";
-@import "./blocks/cabinet/review";
+@import "blocks/cabinet/user";
+@import "blocks/cabinet/slider";
+@import "blocks/cabinet/compound";
+@import "blocks/cabinet/referal";
+@import "blocks/cabinet/qualification";
+@import "blocks/cabinet/liders";
+@import "blocks/cabinet/expert";
+@import "blocks/cabinet/review";
+
+//..........................................................................................................
+
+@import "blocks/dinamic/user";
+@import "blocks/dinamic/chart";
+@import "blocks/dinamic/qualification-dinamic";
+@import "blocks/dinamic/volume";
+@import "blocks/dinamic/teamleaders";
+@import "blocks/dinamic/history";
 
 //............................................................................................................
 
-@import "./blocks/dinamic/user";
-@import "./blocks/dinamic/chart";
-@import "./blocks/dinamic/qualification-dinamic";
-@import "./blocks/dinamic/volume";
-@import "./blocks/dinamic/teamleaders";
-@import "./blocks/dinamic/history";
-
-//............................................................................................................
-
-@import "./blocks/myTeam/userTeam";
-@import "./blocks/myTeam/options";
-@import "./blocks/myTeam/filterTeam";
-@import "./blocks/myTeam/clientInfo";
+@import "blocks/myTeam/userTeam";
+@import "blocks/myTeam/options";
+@import "blocks/myTeam/filterTeam";
+@import "blocks/myTeam/clientInfo";
 
 //............................................................................................................
 
@@ -430,6 +432,8 @@ body.lock {
 //............................................................................................................
 
 @import "media/header_media";
+@import "media/footer_media";
+@import "media/side_media";
 
 //............................................................................................................
 
@@ -482,6 +486,7 @@ body.lock {
 @import "media/media/mediaSlider_media";
 @import "media/media/mediaList_media";
 @import "media/media/mediaSliderBottom_media";
+
 
 //............................................................................................................
 

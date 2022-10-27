@@ -47,7 +47,7 @@
 		@include adaptiv-value("height", 27, 19, 0);
 		@include adaptiv-value("left", 15, 8, 0);
 		top: 10%;
-		background: url("../src/assets/img/icons/liders_check.svg") 0 0 / cover no-repeat;
+		/*background: url("../src/assets/img/icons/liders_check.svg") 0 0 / cover no-repeat;*/
 	}
 	&::after {
 		@include adaptiv-value("width", 16, 12, 0);
@@ -55,7 +55,7 @@
 		@include adaptiv-value("right", 0, 140, 0);
 		top: 50%;
 		transform: translate(0, -50%);
-		background: url("../src/assets/img/icons/liders_arrow.svg") 0 0 / cover no-repeat;
+		/*background: url("../src/assets/img/icons/liders_arrow.svg") 0 0 / cover no-repeat;*/
 	}
 	&__row {
 		
@@ -96,12 +96,12 @@
 		}
 		&-left {
 			&::before {
-				background: url("../src/assets/img/icons/lider_icon.svg") 0 0 / cover no-repeat;
+				/*background: url("../src/assets/img/icons/lider_icon.svg") 0 0 / cover no-repeat;*/
 			}
 		}
 		&-right {
 			&::before {
-				background: url("../src/assets/img/icons/liders_icon.svg") 0 0 / cover no-repeat;
+				/*background: url("../src/assets/img/icons/liders_icon.svg") 0 0 / cover no-repeat;*/
 			}
 		}
 	}
