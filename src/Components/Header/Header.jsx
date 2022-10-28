@@ -4,9 +4,11 @@ import logo from "../../assets/img/icons/logo.svg";
 import user from "../../assets/img/icons/user.svg";
 import cart from "../../assets/img/icons/cart.svg";
 import prev_arrow from "../../assets/img/mediaSliderBottom/prev_arrow.png";
+import {NavLink} from "react-router-dom";
 
 
-const Header = () => {
+const Header = ({burger,setBurger}) => {
+
     return <header className="header">
         <div className="header__container container">
             <div className="header__top top-header ">
@@ -23,14 +25,14 @@ const Header = () => {
                         </form>
                     </div>
                     <div className="top-header__column">
-                        <a href="#" className="top-header__logo">
-                            <img src={logo} alt="logo"/></a>
+                        <NavLink to={"/"} className="top-header__logo">
+                            <img src={logo} alt="logo"/></NavLink>
                     </div>
                     <div className="top-header__column">
                         <div className="top-header__actions actions-top">
-                            <a href="#" className="actions-top__user">
+                            <NavLink to={"/personal_cabinet"} className="actions-top__user">
                                 <img src={user} alt="user"/>
-                            </a>
+                            </NavLink>
                             <a href="#" className="actions-top__cart">
                                 <img src={cart} alt="cart"/>
                                 <span>0</span>
@@ -52,10 +54,10 @@ const Header = () => {
             </div>
             <div className="header__bottom bottom-header">
                 <div className="bottom-header__menu menu">
-                    <div className="menu__icon " > {/*active*/}
+                    <div className={`menu__icon ${burger && "active"}`} onClick={()=>setBurger(!burger)}>
                         <span></span>
                     </div>
-                    <nav className="menu__body "> {/*active*/}
+                    <nav className={`menu__body ${burger && "active"}`}>
                         <ul className="menu__list">
                             <li className="menu__item">
                                 <a href="#" className="menu__link menu__link-header-active">магазин</a>
@@ -119,7 +121,7 @@ const Header = () => {
                             <a href="#" className="lang-menu__lang">UK</a>
                             <a href="#" className="lang-menu__lang">EN</a>
                         </div>
-                        <div className="sub-menu">
+                        <div className={`sub-menu `}> {/*"active"*/}
                             <div className="sub-menu__back">
                                 <div className="sub-menu__arrow">
                                     <img src={prev_arrow} alt="prev_arrow"/></div>
