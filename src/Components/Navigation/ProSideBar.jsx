@@ -1,5 +1,5 @@
-import React from 'react';
-import {Sidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
+import React, {useEffect, useState} from 'react';
+import {Sidebar, Menu, MenuItem, SubMenu, useProSidebar} from 'react-pro-sidebar';
 import {Link, NavLink} from "react-router-dom";
 import actionUser1 from "../../assets/img/icons/actions-user_icon_01.svg";
 import side from "../../assets/img/side.webp";
@@ -8,15 +8,22 @@ import side_action_phome from "../../assets/img/side_action_phome.webp";
 
 
 const ProSideBar = () => {
+    //const { collapseSidebar, toggleSidebar, collapsed, toggled, broken, rtl } = useProSidebar();
+    const [activeBusiness,setActiveBusiness] = useState(false);
+    const [activeEducation,setActiveEducation] = useState(false);
+
     return (
         <aside className="page__side animate__animated animate__fadeInLeft">
             <Sidebar>
-                <Menu className="page-menu menu-page">
-                    <SubMenu className="menu-page__list"  routerLink={
-                        <NavLink to={"/personal_cabinet"}/>
-                    } className={`menu-page__link menu-page__link-01 `}
+                <Menu className="page-menu menu-page ">
+                    <SubMenu active={activeBusiness} className="menu-page__list" onOpenChange={()=>{
+                        setActiveBusiness(!activeBusiness)
+                    }} routerLink={
+                        <NavLink to={"/personal_cabinet"} />
+                    } className={`menu-page__link menu-page__link-01 menu-page__link-arrow `}
                              label={"Мой бизнес"}>
-                        <MenuItem routerLink={<NavLink to={"my_team"} className="menu-page__sub-link"/>}>Моя
+                        <MenuItem  routerLink={
+                            <NavLink to={"my_team"} className="menu-page__sub-link"/>}>Моя
                             команда</MenuItem>
                         <MenuItem routerLink={<NavLink to={"my_bonus"} className="menu-page__sub-link"/>}>Мое
                             вознагрождение</MenuItem>
@@ -30,7 +37,7 @@ const ProSideBar = () => {
                     <MenuItem className="menu-page__link menu-page__link-02"
                               routerLink={<NavLink to={"/messages"}/>}>Сообщения</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-03"
-                              routerLink={<NavLink to={"/partner_registration"}/>}>Регистрация партнера/
+                              routerLink={<NavLink to={"/partner_registration"}/>}>Регистрация партнера/<br/>
                         клиента</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-04"
                               routerLink={<NavLink to={"/promotion"}/>}>Маркетинг план и
@@ -39,7 +46,7 @@ const ProSideBar = () => {
                               routerLink={<NavLink to={"/news"}/>}>Новости</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-06"
                               routerLink={<NavLink to={"/company_leaders"}/>}>Лидеры компании</MenuItem>
-                    <SubMenu  className="menu-page__list" routerLink={
+                    <SubMenu onOpenChange={()=>setActiveEducation(!activeEducation)} active={activeEducation} className="menu-page__list" routerLink={
                         <NavLink to={"/education"}/>
                     } className="menu-page__link menu-page__link-07 menu-page__link-arrow"
                              label={"Обучение"}>

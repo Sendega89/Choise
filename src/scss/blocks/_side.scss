@@ -1,9 +1,11 @@
 .menu-page {
 	display: flex;
+	width: 255px;
 	flex-direction: column;
 	background-color: #fff;
 	margin: 0 0 20px 0;
-	padding: 40px 0 30px 0;
+	/*padding: 40px 0 30px 0;*/
+	padding: 39px 0 30px 0;
 	overflow: hidden;
 	&__link {
 		color: #808080;
@@ -28,7 +30,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				/*top: -50%;*/
+				top: 10px;
 				left: -100%;
 				width: 28px;
 				height: 28px;
@@ -146,6 +148,8 @@
 	&__btn {
 		align-self: center;
 		position: relative;
+		top: 20px;
+		left: 50px;
 		&::before {
 			content: "";
 			position: absolute;
@@ -159,7 +163,29 @@
 		}
 	}
 }
-
+.eVPmrC{
+	position: relative !important;
+	right: 40px !important;
+	height: 30px !important;
+	color: $colorNine !important;
+}
+.eVPmrC:hover {
+	background-color: white !important;
+	color:$colorTwenty  !important;
+}
+.eVPmrC:active {
+	color:$colorTwenty  !important;
+}
+.lkTtqM {
+	padding-left: 0 !important;
+}
+.lkTtqM:hover {
+	background-color: white !important;
+}
+.cxRqFw {
+	background-color: white !important;
+	padding-left: 0px !important;
+}
 //...................................................................................................
 
 .bonus-side {

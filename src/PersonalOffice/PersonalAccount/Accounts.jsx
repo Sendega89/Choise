@@ -1,28 +1,22 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
+import UserInfo from "../../Components/User/UserInfo";
+import flag from "../../assets/img/accounts/flag.svg";
+import flag_eur from "../../assets/img/accounts/flag_eur.svg";
+import bg from "../../assets/img/accounts/bg.webp";
+import bg_phone from "../../assets/img/accounts/bg_phone.png";
+
 
 const MyAccounts = () => {
     return (
             <div className="page__content">
                 <div className="page__box">
                     <div className="page__title title">МОИ СЧЕТА</div>
-                    <a href="index.html" className="page__back">Назад в офис <span></span></a>
+                    <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span></span></NavLink>
                 </div>
                 <div className="page__user user">
                     <div className="user__row">
-                        <div className="user__column">
-                            <div className="user__item item-user">
-                                <div className="item-user__column">
-                                    <div className="item-user__photo ibg"><img src="img/user_photo.webp"
-                                                                               alt="user_photo"/></div>
-                                    <div className="item-user__label">Ukraine, Kyiv</div>
-                                </div>
-                                <div className="item-user__column">
-                                    <div className="item-user__name name">Анна Бондаренко</div>
-                                    <a href="tel:0951458725" className="item-user__phone">095-1458725</a>
-                                    <div className="item-user__mark mark">MG</div>
-                                </div>
-                            </div>
-                        </div>
+                        <UserInfo />
                         <div className="user__column">
                             <div className="user-reward">
                                 <div className="user-reward__top">
@@ -39,42 +33,42 @@ const MyAccounts = () => {
                         <div className="accounts__column">
                             <div className="accounts-stat">
                                 <div className="accounts__title name">Мои счета</div>
-                                <a href="#" className="accounts__item item-accounts">
-                                    <div className="item-accounts__icon"><img src="img/accounts/flag.svg" alt="flag"/>
+                                <NavLink to="#" className="accounts__item item-accounts">
+                                    <div className="item-accounts__icon">
+                                        <img src={flag} alt="flag"/>
                                     </div>
                                     <div className="item-accounts__system">Украинская система <p>Счет/грн</p>
                                     </div>
                                     <div className="item-accounts__money">65 368 <span></span></div>
-                                </a>
-                                <a href="#" className="accounts__item item-accounts">
+                                </NavLink>
+                                <NavLink to="#" className="accounts__item item-accounts">
                                     <div className="item-accounts__icon">
-                                        <img src="img/accounts/flag_eur.svg"
-                                                                              alt="flag"/></div>
+                                        <img src={flag_eur} alt="flag"/></div>
                                     <div className="item-accounts__system">Европейская система <p>Счет/euro</p>
                                     </div>
                                     <div className="item-accounts__money item-accounts__money-euro">200 <span></span>
                                     </div>
-                                </a>
+                                </NavLink>
                                 <button className="accounts__btn btn-main">ПОСМОТРЕТЬ ТРАНЗАКЦИИ</button>
                             </div>
                         </div>
                         <div className="accounts__column">
                             <div className="accounts-reward">
-                                <a href="#" className="accounts-reward__item accounts-reward__item-money">
+                                <NavLink to="#" className="accounts-reward__item accounts-reward__item-money">
                                     Вывод вознаграждения
-                                    {/*{<!-- <input id="outReward" placeholder="Вывод вознаграждения" type="text" name="outReward"
-                                        class="accounts-reward__input"> -->}*/}
-                                </a>
-                                <a href="#" className="accounts-reward__item accounts-reward__item-transfer">
+                                     {/*<input id="outReward" placeholder="Вывод вознаграждения" type="text" name="outReward"
+                                        className="accounts-reward__input"/>*/}
+                                </NavLink>
+                                <NavLink to="#" className="accounts-reward__item accounts-reward__item-transfer">
                                     Перевод
-                                    {/*{ <!-- <input id="outReward" placeholder="Перевод" type="text" name="outReward"
-                                        class="accounts-reward__input"> -->}*/}
-                                </a>
-                                <a href="#" className="accounts-reward__item accounts-reward__item-convert">
+                                    {/* <input id="outReward" placeholder="Перевод" type="text" name="outReward"
+                                        class="accounts-reward__input"/>*/}
+                                </NavLink>
+                                <NavLink to="#" className="accounts-reward__item accounts-reward__item-convert">
                                     Конвертация
                                     {/*{ <!-- <input id="outReward" placeholder="Конвертация" type="text" name="outReward"
                                         class="accounts-reward__input"> -->}*/}
-                                </a>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
@@ -86,10 +80,12 @@ const MyAccounts = () => {
                         <div className="bonus__text">За исполнения условий бонусной программы</div>
                         <div className="bonus__remains">До следующей премии тебе осталось 300 Б</div>
                     </div>
-                    <div className="bonus__bg ibg">
-                        <img src="img/accounts/bg.webp" alt="background"/></div>
-                    <div className="bonus__bgphone ibg">
-                        <img src="img/accounts/bg_phone.png" alt="background"/></div>
+                    {/*<div className="bonus__bg ibg">*/}
+                    <div className="bonus__bg">
+                        <img src={bg} alt="background"/></div>
+                    {/*<div className="bonus__bgphone ibg">*/}
+                    <div className="bonus__bgphone">
+                        <img src={bg_phone} alt="background"/></div>
                 </div>
                 <div className="page__optima optima">
                     <div className="optima__title name">Насчитано OPTIMA</div>
