@@ -58,7 +58,7 @@ const ProSideBar = () => {
                     <MenuItem className="menu-page__link menu-page__link-08"
                               routerLink={<NavLink to={"/media"} />}>Медиабаза</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-09"
-                              routerLink={<NavLink to={"/media"} />}>Личный профиль</MenuItem>
+                              routerLink={<NavLink to={"/personal_cabinet_update"} />}>Личный профиль</MenuItem>
                     <button className="menu-page__btn btn-side">Выйти</button>
                 </Menu>
             </Sidebar>

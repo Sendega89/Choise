@@ -6,6 +6,7 @@ import ProSideBar from "../Navigation/ProSideBar";
 import PersonalDynamic from "../../PersonalOffice/PersonalDynamic/PersonalDynamic";
 import Education from "../../PersonalOffice/Education/Education";
 import MyTeam from "../../PersonalOffice/MyTeam/MyTeam";
+import PersonalInfoUpdate from "../../PersonalOffice/PersonalInfoUpdate/PersonalInfoUpdate";
 
 
 const Main = () => {
@@ -25,6 +26,8 @@ const Main = () => {
                 element={<PersonalDynamic />}/>
                 <Route path={"/education"}
                 element={<Education />}/>
+                <Route path={"/personal_cabinet_update"}
+                element={<PersonalInfoUpdate />}/>
 
 
             </Routes>
