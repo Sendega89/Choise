@@ -4990,7 +4990,7 @@ width: 100%;
   color: #133215;
 }
 .item-modules__img {
-  padding: 0 0 100% 0;
+  /*padding: 0 0 100% 0;*/
   margin-bottom: calc(10px + 10 * ((100vw - 320px) / 1600));
 }
 .item-modules__label {

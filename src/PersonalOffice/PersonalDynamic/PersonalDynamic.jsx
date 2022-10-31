@@ -2,7 +2,6 @@ import React from 'react';
 import UserInfo from "../../Components/User/UserInfo";
 import {NavLink} from "react-router-dom";
 import Qualification from "../../Components/Slider/Qualification";
-import chart_full from "../../assets/img/chart_full.png";
 import QualificationChart from "../../Components/Charts/QualificationChart";
 import QualificationChartTeamValue from "../../Components/Charts/QualificationChartTeamValue";
 import QualificationChartTeamBeginer from "../../Components/Charts/QualificationChartTeamBeginer";
