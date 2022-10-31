@@ -1,7 +1,7 @@
 import React from 'react';
 import check_active from "../../assets/img/icons/check_active.svg";
 import check from "../../assets/img/icons/check.svg";
-import {Link} from "react-router-dom";
+
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
 
@@ -21,9 +21,7 @@ SwiperCore.use([Autoplay, Pagination, Navigation,EffectCoverflow]);
 
 const Qualification = () => {
     return (
-
         <Swiper spaceBetween={10}
-
                     navigation
                     slidesPerView={4}
                     loop={true}
@@ -38,8 +36,8 @@ const Qualification = () => {
                     watchOverflow={false}
                      pagination={{
         "clickable": true
-    }} className="qualificationSwiper">
-
+    }}
+                className="qualification-dinamic__wrapper swiper qualificationSwiper">
             <SwiperSlide className="qualification-dinamic__column swiper-slide">
 
                 <div className="qualification-dinamic__item">
@@ -108,6 +106,7 @@ const Qualification = () => {
             </div>
             </SwiperSlide>
         </Swiper>
+
 
     );
 };

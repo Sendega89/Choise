@@ -135,11 +135,9 @@ const PersonalDynamic = () => {
                         </div>
                     </div>
                 </div>*/}
-                <div className="qualification-dinamic__wrapper swiper">
-                    <div className="qualification-dinamic__row swiper-wrapper">
+
                 <Qualification />
-                    </div>
-                </div>
+
             </div>
             <div className="page__volume volume">
                 <div className="volume__row">
