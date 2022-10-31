@@ -12,7 +12,7 @@ const MyAccounts = () => {
             <div className="page__content">
                 <div className="page__box">
                     <div className="page__title title">МОИ СЧЕТА</div>
-                    <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span></span></NavLink>
+                    <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span> </span></NavLink>
                 </div>
                 <div className="page__user user">
                     <div className="user__row">
@@ -20,10 +20,10 @@ const MyAccounts = () => {
                         <div className="user__column">
                             <div className="user-reward">
                                 <div className="user-reward__top">
-                                    <div className="user-reward__icon"></div>
+                                    <div className="user-reward__icon"> </div>
                                     <div className="user-reward__label">Мое вознаграждение</div>
                                 </div>
-                                <div className="user-reward__sum">65 368 <span></span></div>
+                                <div className="user-reward__sum">65 368 <span> </span></div>
                             </div>
                         </div>
                     </div>
@@ -39,14 +39,14 @@ const MyAccounts = () => {
                                     </div>
                                     <div className="item-accounts__system">Украинская система <p>Счет/грн</p>
                                     </div>
-                                    <div className="item-accounts__money">65 368 <span></span></div>
+                                    <div className="item-accounts__money">65 368 <span> </span></div>
                                 </NavLink>
                                 <NavLink to="#" className="accounts__item item-accounts">
                                     <div className="item-accounts__icon">
                                         <img src={flag_eur} alt="flag"/></div>
                                     <div className="item-accounts__system">Европейская система <p>Счет/euro</p>
                                     </div>
-                                    <div className="item-accounts__money item-accounts__money-euro">200 <span></span>
+                                    <div className="item-accounts__money item-accounts__money-euro">200 <span> </span>
                                     </div>
                                 </NavLink>
                                 <button className="accounts__btn btn-main">ПОСМОТРЕТЬ ТРАНЗАКЦИИ</button>

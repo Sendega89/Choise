@@ -7,6 +7,7 @@ import PersonalDynamic from "../../PersonalOffice/PersonalDynamic/PersonalDynami
 import Education from "../../PersonalOffice/Education/Education";
 import MyTeam from "../../PersonalOffice/MyTeam/MyTeam";
 import PersonalInfoUpdate from "../../PersonalOffice/PersonalInfoUpdate/PersonalInfoUpdate";
+import Receipt from "../../PersonalOffice/Receipt/Receipt";
 
 
 const Main = () => {
@@ -28,6 +29,8 @@ const Main = () => {
                 element={<Education />}/>
                 <Route path={"/personal_cabinet_update"}
                 element={<PersonalInfoUpdate />}/>
+                <Route path={"/receipt"}
+                element={<Receipt />}/>
 
 
             </Routes>
