@@ -22,6 +22,18 @@ SwiperCore.use([Autoplay, Pagination, Navigation,EffectCoverflow]);
 const Qualification = () => {
     return (
         <Swiper spaceBetween={10}
+                breakpoints={{
+                    "359.98": {
+                    slidesPerView: 2,
+                },
+                    "767.98": {
+                    slidesPerView: 3,
+                },
+                    "1010.98": {
+                    slidesPerView: 4,
+                },
+                }}
+                freeMode={true}
                     navigation
                     slidesPerView={4}
                     loop={true}

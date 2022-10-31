@@ -12,7 +12,7 @@ import review_heart from "../../assets/img/review/review_heart.png";
 import review_bg from "../../assets/img/review/review_bg.webp";
 import {Link, NavLink} from "react-router-dom";
 import ExpertsSlider from "../../Components/Slider/ExpertsSlider";
-import Qualification from "../../Components/Qualification/Qualification";
+import Qualification from "../../Components/Slider/Qualification";
 
 
 const PersonalOfficeMain = () => {
