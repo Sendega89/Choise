@@ -5,6 +5,7 @@ import MyAccounts from "../../PersonalOffice/PersonalAccount/Accounts";
 import ProSideBar from "../Navigation/ProSideBar";
 import PersonalDynamic from "../../PersonalOffice/PersonalDynamic/PersonalDynamic";
 import Education from "../../PersonalOffice/Education/Education";
+import MyTeam from "../../PersonalOffice/MyTeam/MyTeam";
 
 
 const Main = () => {
@@ -14,7 +15,8 @@ const Main = () => {
             <Routes>
                 <Route path="/personal_cabinet"
                        element={<PersonalOfficeMain/>}/>
-                <Route path={"my_team"}/>
+                <Route path={"my_team"}
+                element={<MyTeam/>}/>
                 <Route path={"my_bonus"}/>
                 <Route path={"/my_accounts"}
                        element={<MyAccounts/>}/>

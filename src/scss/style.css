@@ -3797,7 +3797,7 @@ width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*background: url("../src/assets/img/icons/actions-user_icon_01.svg") 0 0 / cover no-repeat;*/
+  background: url("/assets/img/icons/actions-user_icon_01.svg") 0 0/cover no-repeat;
   z-index: 1;
 }
 .user-reward__label {
@@ -3824,7 +3824,7 @@ width: 100%;
   top: 50%;
   right: 22%;
   transform: translate(0, -50%);
-  /*background: url("../src/assets/img/icons/uah_green.svg") 0 0 / cover no-repeat;*/
+  background: url("/assets/img/icons/uah_green.svg") 0 0/cover no-repeat;
   z-index: 1;
 }
 
@@ -4195,7 +4195,7 @@ width: 100%;
   right: calc(8px + 7 * ((100vw - 320px) / 1600));
   width: 10px;
   height: 10px;
-  /*background: url("../src/assets/img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;*/
+  background: url("/assets/img/accounts/uah-dark-green.svg") 0 0/cover no-repeat;
 }
 
 .item-person-value {
@@ -4249,7 +4249,7 @@ width: 100%;
   right: 0;
   width: calc(7px + 3 * ((100vw - 320px) / 1600));
   height: calc(7px + 3 * ((100vw - 320px) / 1600));
-  /*background: url("../src/assets/img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;*/
+  background: url("/assets/img/accounts/uah-dark-green.svg") 0 0/cover no-repeat;
 }
 
 .person-value-hide__units {
@@ -4287,7 +4287,7 @@ width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*background: url("../src/assets/img/icons/stat.svg") 0 0 / cover no-repeat;*/
+  background: url("/assets/img/icons/stat.svg") 0 0/cover no-repeat;
   z-index: 1;
 }
 .user-receipt__label {
@@ -5617,7 +5617,7 @@ width: 100%;
   left: 0;
   width: 48px;
   height: 48px;
-  /*background: url("../src/assets/img/icons/shopping_icon.svg") 0 0 / cover no-repeat;*/
+  background: url("/assets/img/icons/shopping_icon.svg") 0 0/cover no-repeat;
 }
 
 .shopping-sale__header {

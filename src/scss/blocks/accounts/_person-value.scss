@@ -45,7 +45,7 @@
 			@include adaptiv-value("right", 15, 8, 0);
 			width: 10px;
 			height: 10px;
-			/*background: url("../src/assets/img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;*/
+			background: url("/assets/img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;
 		}
 	}
 
@@ -104,7 +104,7 @@
 			right: 0;
 			@include adaptiv-value("width", 10, 7, 0);
 			@include adaptiv-value("height", 10, 7, 0);
-			/*background: url("../src/assets/img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;*/
+			background: url("/assets/img/accounts/uah-dark-green.svg") 0 0 / cover no-repeat;
 		}
 	}
 }

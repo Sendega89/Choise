@@ -21,7 +21,7 @@ const Education = () => {
         <div className="page__content">
             <div className="page__box">
                 <div className="page__title title">ОБУЧЕНИЕ</div>
-                <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span></span></NavLink>
+                <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span> </span></NavLink>
             </div>
             <div className="page__education education">
                 <div className="education__top top-education">
