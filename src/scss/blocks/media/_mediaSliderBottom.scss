@@ -78,7 +78,8 @@
 	}
 
 	&__img {
-		padding: 0px 0px 100% 0px;
+		/*padding: 0 0 100% 0;*/
+		min-height: 100%;
 		margin-bottom: 15px;
 		transition: all 0.3s ease;
 	}

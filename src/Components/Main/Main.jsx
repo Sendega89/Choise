@@ -8,6 +8,7 @@ import Education from "../../PersonalOffice/Education/Education";
 import MyTeam from "../../PersonalOffice/MyTeam/MyTeam";
 import PersonalInfoUpdate from "../../PersonalOffice/PersonalInfoUpdate/PersonalInfoUpdate";
 import Receipt from "../../PersonalOffice/Receipt/Receipt";
+import Media from "../../PersonalOffice/Media/Media";
 
 
 const Main = () => {
@@ -31,6 +32,8 @@ const Main = () => {
                 element={<PersonalInfoUpdate />}/>
                 <Route path={"/receipt"}
                 element={<Receipt />}/>
+                <Route path={"/media"}
+                       element={<Media />}/>
 
 
             </Routes>
