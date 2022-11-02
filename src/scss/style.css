@@ -1254,7 +1254,11 @@ body.lock::before {
 
 .cxRqFw {
   background-color: white !important;
-  padding-left: 0px !important;
+  padding-left: 0 !important;
+}
+
+.ktVuSn:hover {
+  color: #7a934f;
 }
 
 .bonus-side {
@@ -5006,7 +5010,7 @@ width: 100%;
 }
 
 .module-one__img {
-  padding: 0 0 17.94% 0;
+  /*padding: 0 0 17.94% 0;*/
   border-radius: 5px 5px 0 0;
 }
 .module-one__item {

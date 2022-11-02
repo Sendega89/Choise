@@ -10,6 +10,7 @@ import PersonalInfoUpdate from "../../PersonalOffice/PersonalInfoUpdate/Personal
 import Receipt from "../../PersonalOffice/Receipt/Receipt";
 import Media from "../../PersonalOffice/Media/Media";
 import Marketing from "../../PersonalOffice/Marketing/Marketing";
+import Beginer from "../../PersonalOffice/Education/Beginer";
 
 
 const Main = () => {
@@ -37,6 +38,8 @@ const Main = () => {
                        element={<Media />}/>
                 <Route path={"/marketing"}
                        element={<Marketing />}/>
+                <Route path={"/education_module_1"}
+                       element={<Beginer />}/>
 
 
             </Routes>

@@ -45,10 +45,13 @@ const ProSideBar = () => {
                               routerLink={<NavLink to={"/news"}/>}>Новости</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-06"
                               routerLink={<NavLink to={"/company_leaders"}/>}>Лидеры компании</MenuItem>
-                    <SubMenu onOpenChange={()=>setActiveEducation(!activeEducation)} active={activeEducation} className="menu-page__list"
+                    <SubMenu onOpenChange={()=>setActiveEducation(!activeEducation)}
+                              className="menu-page__list"
+                                active={activeEducation}
                                 className="menu-page__link menu-page__link-07 menu-page__link-arrow"
                              label={"Обучение"}>
-                        <MenuItem className="menu-page__item"  routerLink={<NavLink to={"/education"}/>}>Модуль 1 - Новичок</MenuItem>
+                        <MenuItem className="menu-page__item" routerLink={<NavLink to={"/education"}/>}>Main</MenuItem>
+                        <MenuItem className="menu-page__item" routerLink={<NavLink to={"/education_module_1"}/>}>Модуль 1 - Новичок</MenuItem>
                         <MenuItem className="menu-page__item" routerLink={<NavLink to={"my_bonus"} className="menu-page__sub-link"/>}>Модуль 2 - Активный партнер</MenuItem>
                         <MenuItem className="menu-page__item" routerLink={<NavLink to={"my_accounts"} className="menu-page__sub-link"/>}>Модуль 3 - Менеджер</MenuItem>
                         <MenuItem className="menu-page__item" routerLink={<NavLink to={"my_orders"} className="menu-page__sub-link"/>}>Модуль 4 - Лидер группы</MenuItem>
