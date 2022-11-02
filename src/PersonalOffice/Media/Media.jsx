@@ -4,11 +4,6 @@ import media_img from "../../assets/img/media_img.webp";
 import media_roll from "../../assets/img/icons/media_roll.png";
 import tagsIcon from "../../assets/img/icons/tags_icon.svg";
 import categories_icon from "../../assets/img/icons/categories_icon.png";
-import itemMediaSliderBottom01 from "../../assets/img/mediaSliderBottom/item-media-slider-bottom01.webp";
-import itemMediaSliderBottom02 from "../../assets/img/mediaSliderBottom/item-media-slider-bottom02.webp";
-import itemMediaSliderBottom03 from "../../assets/img/mediaSliderBottom/item-media-slider-bottom03.webp";
-import prev_arrow from "../../assets/img/mediaSliderBottom/prev_arrow.svg";
-import next_arrow from "../../assets/img/mediaSliderBottom/next_arrow.svg";
 import MediaSlider from "../../Components/Slider/MediaSlider";
 
 const Media = () => {
@@ -414,7 +409,7 @@ const Media = () => {
                 </div>
                 <div className="media-slider__roll">
                     <img src={media_roll} alt="roll"/></div>
-                <div className="media-slider__scroll"></div>
+                <div className="media-slider__scroll"> </div>
             </div>
             <div className="page__media-list media-list">
                 <div className="media-list__row">

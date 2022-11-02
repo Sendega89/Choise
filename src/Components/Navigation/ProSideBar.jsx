@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import {Sidebar, Menu, MenuItem, SubMenu, useProSidebar} from 'react-pro-sidebar';
-import {Link, NavLink} from "react-router-dom";
-import actionUser1 from "../../assets/img/icons/actions-user_icon_01.svg";
+import React, {useState} from 'react';
+import {Sidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
+import { NavLink} from "react-router-dom";
 import side from "../../assets/img/side.webp";
 import side_action from "../../assets/img/side_action.webp";
 import side_action_phome from "../../assets/img/side_action_phome.webp";
@@ -40,14 +39,14 @@ const ProSideBar = () => {
                               routerLink={<NavLink to={"/partner_registration"}/>}>Регистрация партнера/<br/>
                         клиента</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-04"
-                              routerLink={<NavLink to={"/promotion"}/>}>Маркетинг план и
+                              routerLink={<NavLink to={"/marketing"}/>}>Маркетинг план и
                         промоушн</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-05"
                               routerLink={<NavLink to={"/news"}/>}>Новости</MenuItem>
                     <MenuItem className="menu-page__link menu-page__link-06"
                               routerLink={<NavLink to={"/company_leaders"}/>}>Лидеры компании</MenuItem>
                     <SubMenu onOpenChange={()=>setActiveEducation(!activeEducation)} active={activeEducation} className="menu-page__list"
-                    className="menu-page__link menu-page__link-07 menu-page__link-arrow"
+                                className="menu-page__link menu-page__link-07 menu-page__link-arrow"
                              label={"Обучение"}>
                         <MenuItem className="menu-page__item"  routerLink={<NavLink to={"/education"}/>}>Модуль 1 - Новичок</MenuItem>
                         <MenuItem className="menu-page__item" routerLink={<NavLink to={"my_bonus"} className="menu-page__sub-link"/>}>Модуль 2 - Активный партнер</MenuItem>
@@ -66,7 +65,7 @@ const ProSideBar = () => {
                 <div className="page__column">
                     <div className="page__bonus bonus-side">
                         <div className="bonus-side__label">Ваш бонус</div>
-                        <div className="bonus-side__price">150<span></span></div>
+                        <div className="bonus-side__price">150<span> </span></div>
                         {/*<div className="bonus-side__bg ibg">*/}
                         <div className="bonus-side__bg">
                             <img src={side} alt="action"/></div>
