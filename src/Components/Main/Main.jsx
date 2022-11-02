@@ -10,7 +10,8 @@ import PersonalInfoUpdate from "../../PersonalOffice/PersonalInfoUpdate/Personal
 import Receipt from "../../PersonalOffice/Receipt/Receipt";
 import Media from "../../PersonalOffice/Media/Media";
 import Marketing from "../../PersonalOffice/Marketing/Marketing";
-import Beginer from "../../PersonalOffice/Education/Beginer";
+import Beginner from "../../PersonalOffice/Education/Beginner";
+import MyOrders from "../../PersonalOffice/MyOrders/MyOrders";
 
 
 const Main = () => {
@@ -25,7 +26,8 @@ const Main = () => {
                 <Route path={"my_bonus"}/>
                 <Route path={"/my_accounts"}
                        element={<MyAccounts/>}/>
-                <Route path={"my_orders"}/>
+                <Route path={"my_orders"}
+                element={<MyOrders/>}/>
                 <Route path={"my_dynamic"}
                 element={<PersonalDynamic />}/>
                 <Route path={"/education"}
@@ -39,7 +41,7 @@ const Main = () => {
                 <Route path={"/marketing"}
                        element={<Marketing />}/>
                 <Route path={"/education_module_1"}
-                       element={<Beginer />}/>
+                       element={<Beginner />}/>
 
 
             </Routes>

@@ -4,7 +4,7 @@ import moduleOne_img from "../../assets/img/moduleOne_img.webp";
 import expert_check from "../../assets/img/expert/expert_check.svg"
 import {Swiper, SwiperSlide} from "swiper/react";
 import {FreeMode, Mousewheel, Scrollbar} from "swiper";
-const Beginer = () => {
+const Beginner = () => {
     return (
         <div className="page__content">
             <div className="page__box">
@@ -144,4 +144,4 @@ const Beginer = () => {
     );
 };
 
-export default Beginer;
+export default Beginner;
