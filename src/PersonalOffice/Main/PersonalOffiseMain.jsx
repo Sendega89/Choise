@@ -32,7 +32,7 @@ const PersonalOfficeMain = () => {
             <div className="page__compound compound">
                 <div className="compound__row">
                     <div className="compound__column">
-                        <a href="#" className="compound__item">
+                        <Link to={"/"} className="compound__item">
                             <div className="compound__link">Новичков в команде <span
                                 className="compound__onearrow">
                                     <img src={arrow} alt="arrow"/>
@@ -43,10 +43,10 @@ const PersonalOfficeMain = () => {
                                     <img src={arrows} alt="arrow"/>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="compound__column">
-                        <a href="#" className="compound__item">
+                        <Link to={"/"} className="compound__item">
                             <div className="compound__link">Активные менеджеры<span
                                 className="compound__onearrow">
                                     <img src={arrow} alt="arrow"/>
@@ -57,10 +57,10 @@ const PersonalOfficeMain = () => {
                                     <img src={arrows} alt="arrow"/>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="compound__column">
-                        <a href="#" className="compound__item">
+                        <Link to={"/"} className="compound__item">
                             <div className="compound__link">Сгорающих контрактов<span
                                 className="compound__onearrow">
                                     <img
@@ -71,10 +71,10 @@ const PersonalOfficeMain = () => {
                                     <img src={arrows} alt="arrow"/>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="compound__column">
-                        <a href="#" className="compound__item">
+                        <Link to={"/"} className="compound__item">
                             <div className="compound__link">Не активные менеджеры<span
                                 className="compound__onearrow">
                                     <img
@@ -85,7 +85,7 @@ const PersonalOfficeMain = () => {
                                     <img src={arrows} alt="arrow"/>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="compound__actions actions-compound">
@@ -229,7 +229,7 @@ const PersonalOfficeMain = () => {
             </div>
             <div className="page__expert expert">
                 <div className="expert__title title title-small">Моя экспертность</div>
-                <div className="expert__progress"></div>
+                <div className="expert__progress"> </div>
                 <div className="expert__wrapper swiper">
                     <div className="expert__row swiper-wrapper">
                             <ExpertsSlider/>

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import search from "../../assets/img/icons/search.svg";
 import logo from "../../assets/img/icons/logo.svg";
 import user from "../../assets/img/icons/user.svg";
 import cart from "../../assets/img/icons/cart.svg";
 import prev_arrow from "../../assets/img/mediaSliderBottom/prev_arrow.png";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 
 const Header = ({burger,setBurger}) => {
-
+const [openLangPanel, setOpenLangPanel] = useState(false)
     return <header className="header">
         <div className="header__container container">
             <div className="header__top top-header ">
@@ -33,18 +33,20 @@ const Header = ({burger,setBurger}) => {
                             <NavLink to={"/personal_cabinet"} className="actions-top__user">
                                 <img src={user} alt="user"/>
                             </NavLink>
-                            <a href="#" className="actions-top__cart">
+                            <Link to={"#"} className="actions-top__cart">
                                 <img src={cart} alt="cart"/>
                                 <span>0</span>
-                            </a>
-                            <div className="actions-top__lang lang-top">
-                                <a href="#" className="lang-top__link lang-top__link-arrow">EN</a>
-                                <ul className="lang-top__list">
+                            </Link>
+                            <div className="actions-top__lang lang-top ">
+                                <Link to={"#"}
+                                      onClick={()=> setOpenLangPanel(!openLangPanel)}
+                                      className={`lang-top__link lang-top__link-arrow ${openLangPanel && "active"}`}>EN</Link>
+                                <ul className="lang-top__list" style={{display:openLangPanel?"block":"none"}}>
                                     <li className="lang-top__item">
-                                        <a href="#" className="lang-top__link">RU</a>
+                                        <Link to={"#"} className="lang-top__link">RU</Link>
                                     </li>
                                     <li className="lang-top__item">
-                                        <a href="#" className="lang-top__link">UK</a>
+                                        <Link to={"#"} className="lang-top__link">UK</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -55,71 +57,71 @@ const Header = ({burger,setBurger}) => {
             <div className="header__bottom bottom-header">
                 <div className="bottom-header__menu menu">
                     <div className={`menu__icon ${burger && "active"}`} onClick={()=>setBurger(!burger)}>
-                        <span></span>
+                        <span> </span>
                     </div>
                     <nav className={`menu__body ${burger && "active"}`}>
                         <ul className="menu__list">
                             <li className="menu__item">
-                                <a href="#" className="menu__link menu__link-header-active">магазин</a>
+                                <Link to={"#"} className="menu__link menu__link-header-active">магазин</Link>
                                 {/*<!-- <span class="menu__arrow"></span> -->*/}
                                 <ul className="menu__sub-list">
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link">Полный каталог</a>
+                                        <Link to={"#"} className="menu__sub-link">Полный каталог</Link>
                                     </li>
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link menu__sub-link-beauty">Красота</a>
+                                        <Link to={"#"} className="menu__sub-link menu__sub-link-beauty">Красота</Link>
 
                                     </li>
                                     <li className="menu__sub-item">
-                                        <a href="" className="menu__sub-link">Дом</a>
+                                        <Link href="" className="menu__sub-link">Дом</Link>
                                     </li>
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link">Здоровье</a>
+                                        <Link to={"#"} className="menu__sub-link">Здоровье</Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="menu__item">
-                                <a href="#" className="menu__link menu__link-header-active">о компании</a>
+                                <Link to={"#"} className="menu__link menu__link-header-active">о компании</Link>
                                 {/*{<!-- <span class="menu__arrow"></span> -->}*/}
                                 <ul className="menu__sub-list">
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link">Полный каталог</a>
+                                        <Link to={"#"} className="menu__sub-link">Полный каталог</Link>
                                     </li>
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link active">Красота</a>
+                                        <Link to={"#"} className="menu__sub-link active">Красота</Link>
 
                                     </li>
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link">Дом</a>
+                                        <Link to={"#"} className="menu__sub-link">Дом</Link>
                                     </li>
                                     <li className="menu__sub-item">
-                                        <a href="#" className="menu__sub-link">Здоровье</a>
+                                        <Link to={"#"} className="menu__sub-link">Здоровье</Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="menu__item">
-                                <a href="#" className="menu__link">бизнес С choice</a>
+                                <Link to={"#"} className="menu__link">бизнес С choice</Link>
                             </li>
                             <li className="menu__item">
-                                <a href="#" className="menu__link">БРЕНДЫ КОМПАНИИ</a>
+                                <Link to={"#"} className="menu__link">БРЕНДЫ КОМПАНИИ</Link>
                             </li>
                             <li className="menu__item">
-                                <a href="#" className="menu__link">БЛАГОТВОРИТЕЛЬНОСТЬ</a>
+                                <Link to={"#"} className="menu__link">БЛАГОТВОРИТЕЛЬНОСТЬ</Link>
                             </li>
                             <li className="menu__item">
-                                <a href="#" className="menu__link">контакты</a>
+                                <Link to={"#"} className="menu__link">контакты</Link>
                             </li>
                             <li className="menu__item">
-                                <a href="#" className="menu__link">ПРОГРАММЫ</a>
+                                <Link to={"#"} className="menu__link">ПРОГРАММЫ</Link>
                             </li>
                         </ul>
                         <button className="menu__btn btn btn-menugreen">Вход в кабинет</button>
                         <button className="menu__btn btn btn-menugray">КОРЗИНА</button>
                         <div className="menu__langs lang-menu">
                             <div className="lang-menu__label">Язык</div>
-                            <a href="#" className="lang-menu__lang active">RU</a>
-                            <a href="#" className="lang-menu__lang">UK</a>
-                            <a href="#" className="lang-menu__lang">EN</a>
+                            <Link to={"#"} className="lang-menu__lang active">RU</Link>
+                            <Link to={"#"} className="lang-menu__lang">UK</Link>
+                            <Link to={"#"} className="lang-menu__lang">EN</Link>
                         </div>
                         <div className={`sub-menu `}> {/*"active"*/}
                             <div className="sub-menu__back">
@@ -128,29 +130,29 @@ const Header = ({burger,setBurger}) => {
 
                                 <div className="sub-menu__label">Назад</div>
                             </div>
-                            <div className="sub-menu__title">КРАСОТА<span></span></div>
+                            <div className="sub-menu__title">КРАСОТА<span> </span></div>
                             <ul className="sub-menu__list">
                                 <li className="sub-menu__item">
-                                    <a href="#" className="sub-menu__link">Для тела</a>
+                                    <Link to={"#"} className="sub-menu__link">Для тела</Link>
                                 </li>
                                 <li className="sub-menu__item">
-                                    <a href="#" className="sub-menu__link">Для лица</a>
+                                    <Link to={"#"} className="sub-menu__link">Для лица</Link>
                                 </li>
                                 <li className="sub-menu__item">
-                                    <a href="#" className="sub-menu__link">Для волос</a>
+                                    <Link to={"#"} className="sub-menu__link">Для волос</Link>
                                 </li>
                                 <li className="sub-menu__item">
-                                    <a href="#" className="sub-menu__link">Антиэйдж</a>
+                                    <Link to={"#"} className="sub-menu__link">Антиэйдж</Link>
                                 </li>
                             </ul>
-                            <div className="sub-menu__flex"></div>
+                            <div className="sub-menu__flex"> </div>
                             <button className="menu__btn btn btn-menugreen">Алина бондаренко</button>
                             <button className="menu__btn btn btn-menugray">КОРЗИНА</button>
                             <div className="menu__langs lang-menu">
                                 <div className="lang-menu__label">Язык</div>
-                                <a href="#" className="lang-menu__lang active">RU</a>
-                                <a href="#" className="lang-menu__lang">UK</a>
-                                <a href="#" className="lang-menu__lang">EN</a>
+                                <Link to={"#"} className="lang-menu__lang active">RU</Link>
+                                <Link to={"#"} className="lang-menu__lang">UK</Link>
+                                <Link to={"#"} className="lang-menu__lang">EN</Link>
                             </div>
                         </div>
                     </nav>

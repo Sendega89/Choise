@@ -12,6 +12,9 @@ import Media from "../../PersonalOffice/Media/Media";
 import Marketing from "../../PersonalOffice/Marketing/Marketing";
 import Beginner from "../../PersonalOffice/Education/Beginner";
 import MyOrders from "../../PersonalOffice/MyOrders/MyOrders";
+import MyOrdersSale from "../../PersonalOffice/MyOrders/MyOrdersSale";
+import PopupStatus from "../../PersonalOffice/MyOrders/PopupStatus";
+import PopupRedactionOrder from "../../PersonalOffice/MyOrders/PopupRedactionOrder";
 
 
 const Main = () => {
@@ -28,6 +31,13 @@ const Main = () => {
                        element={<MyAccounts/>}/>
                 <Route path={"my_orders"}
                 element={<MyOrders/>}/>
+                <Route path={"/my_orders_sale"}
+                element={<MyOrdersSale/>}>
+                </Route>
+                <Route path={"popup_status"}
+                       element={<PopupStatus/>}/>
+                <Route path={"popup_reduction"}
+                       element={<PopupRedactionOrder/>}/>
                 <Route path={"my_dynamic"}
                 element={<PersonalDynamic />}/>
                 <Route path={"/education"}
