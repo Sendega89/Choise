@@ -10,7 +10,7 @@ const PersonalDynamic = () => {
         <div className="page__content">
             <div className="page__box">
                 <div className="page__title title">ЛИЧНая Динамика</div>
-                <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span></span></NavLink>
+                <NavLink to="/personal_cabinet" className="page__back">Назад в офис <span> </span></NavLink>
             </div>
             <div className="page__user user">
                 <div className="user__row">
@@ -90,7 +90,7 @@ const PersonalDynamic = () => {
             <div className="page__teamleaders teamleaders">
                 <div className="teamleaders__title name">Лидеры команды</div>
                 <div className="teamleaders__filter filter">
-                    <button className="filter__btn btn-main btn-main-plus"><span></span> добавить фильтр</button>
+                    <button className="filter__btn btn-main btn-main-plus"><span> </span> добавить фильтр</button>
                     <div className="filter__form form-filter">
                         <form action="#" className="form-filter">
                             <select name="volume"

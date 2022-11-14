@@ -53,7 +53,7 @@ export const data = {
     datasets: [{
         type: 'bar',
         label: 'Самый низкий показатель',
-        data: [0, 200, 195, 0, 0, 0, 0, 0, 344, 0, 40, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,100],
+        data: [5, 200, 195, 67, 89, 278, 100, 500, 344, 11, 40, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9,100],
         backgroundColor: ['#cfdec3'],
         borderBlockEnd:["1px solid black"],
         categoryPercentage: 1.5,

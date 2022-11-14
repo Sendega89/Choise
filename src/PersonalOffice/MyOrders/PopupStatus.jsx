@@ -6,7 +6,7 @@ const PopupStatus = () => {
         <div id="popup-1" className="popup popup-1 open">
             <div className="popup__body">
                 <div className="popup__content">
-                    <Link to="/my_orders_sale" className="popup__close close-popup ">x</Link>
+                    <Link to="/my_orders_sale" className="popup__close close-popup">x</Link>
                     <div className="popup__item item-top-popup">
                         <div className="item-top-popup__title">Статус вашего заказа</div>
                         <div className="item-top-popup__row">
