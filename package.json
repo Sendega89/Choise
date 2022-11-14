@@ -1,7 +1,7 @@
 {
   "name": "choise",
   "version": "0.1.0",
-  "homepage": "https://sendega89.github.io/Choise",
+  "homepage": "https://sendega89.github.io/Choise/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

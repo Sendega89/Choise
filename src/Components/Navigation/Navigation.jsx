@@ -15,7 +15,7 @@ const [activeEducation,setActiveEducation] = useState(false)
                 <Link to={"/personal_cabinet"}
                       onClick={()=>setActiveMenu(!activeMenu)}
                       className={`menu-page__link menu-page__link-01 menu-page__link-arrow ${activeMenu && "active"}`}>Мой
-                    бизнес<span></span></Link>
+                    бизнес<span> </span> </Link>
 
                 <ul className="menu-page__list " style={{display:activeMenu?"block":"none"}}>
                     <li className="menu-page__item">
