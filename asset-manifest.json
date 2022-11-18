@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Choise/static/css/main.e6825c64.css",
-    "main.js": "/Choise/static/js/main.c430f6bc.js",
+    "main.css": "/Choise/static/css/main.5bdde2e1.css",
+    "main.js": "/Choise/static/js/main.96dc0dc4.js",
     "static/js/787.d77377c8.chunk.js": "/Choise/static/js/787.d77377c8.chunk.js",
     "static/media/media_img.webp": "/Choise/static/media/media_img.3dee34f89ca44d230a5f.webp",
     "static/media/CeraPro-Regular.eot": "/Choise/static/media/CeraPro-Regular.0842fcffd23cb3380145.eot",
@@ -98,12 +98,12 @@
     "static/media/expert_info.svg": "/Choise/static/media/expert_info.47cce98a489d3a3dc561d4b1275d7a8f.svg",
     "static/media/liders_arrow.svg": "/Choise/static/media/liders_arrow.7a468fcc102bb9e53077.svg",
     "static/media/expert_check.svg": "/Choise/static/media/expert_check.b5680d53e9e2b7e0ea95352e44b65a39.svg",
-    "main.e6825c64.css.map": "/Choise/static/css/main.e6825c64.css.map",
-    "main.c430f6bc.js.map": "/Choise/static/js/main.c430f6bc.js.map",
+    "main.5bdde2e1.css.map": "/Choise/static/css/main.5bdde2e1.css.map",
+    "main.96dc0dc4.js.map": "/Choise/static/js/main.96dc0dc4.js.map",
     "787.d77377c8.chunk.js.map": "/Choise/static/js/787.d77377c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6825c64.css",
-    "static/js/main.c430f6bc.js"
+    "static/css/main.5bdde2e1.css",
+    "static/js/main.96dc0dc4.js"
   ]
 }
