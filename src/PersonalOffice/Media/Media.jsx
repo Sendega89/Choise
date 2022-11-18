@@ -465,51 +465,7 @@ const Media = () => {
                     </div>
                 </div>
             </div>
-            {/*<div className="page__media-slider-bottom media-slider-bottom">
-             <div className="media-slider-bottom__row">
-                    <div className="media-slider-bottom__row">
-                        <div className="media-slider-bottom__column">
-                            <div className="media-slider-bottom__item item-media-slider-bottom">
-                                <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
-                                <div className="item-media-slider-bottom__img"><img
-                                    src={itemMediaSliderBottom01}
-                                    alt="item-media-slider-bottom"/></div>
-                                <div className="item-media-slider-bottom__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Cras ultrices et integer velit pharetra.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="media-slider-bottom__column">
-                            <div className="media-slider-bottom__item item-media-slider-bottom">
-                                <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
-                                <div className="item-media-slider-bottom__img">
-                                    <img src={itemMediaSliderBottom02}
-                                    alt="item-media-slider-bottom"/></div>
-                                <div className="item-media-slider-bottom__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Cras ultrices et integer velit pharetra.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="media-slider-bottom__column">
-                            <div className="media-slider-bottom__item item-media-slider-bottom">
-                                <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
-                                <div className="item-media-slider-bottom__img"><img
-                                    src={itemMediaSliderBottom03} alt="item-media-slider-bottom"/></div>
-                                <div className="item-media-slider-bottom__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Cras ultrices et integer velit pharetra.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div className="media-slider-bottom__controls">
-                        <div className="media-slider-bottom__next"><img src={prev_arrow}
-                                                                        alt="arrow"/></div>
-                        <div className="media-slider-bottom__prev"><img src={next_arrow}
-                                                                        alt="arrow"/></div>
-                    </div>
-             </div>
-            </div>*/}
         </div>
     );
 };

@@ -44,7 +44,7 @@ const MediaSlider = () => {
                 watchOverflow={true}
                 pagination={{
                     "clickable": true
-                }} class="media-slider-bottom__column">
+                }} /*class="media-slider-bottom__column"*/>
 
             <SwiperSlide className="media-slider-bottom__item item-media-slider-bottom">
                         <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
@@ -80,37 +80,3 @@ const MediaSlider = () => {
 
 export default MediaSlider;
 
-/*<div className="media-slider-bottom__row">
-                        <div className="media-slider-bottom__column">
-                            <div className="media-slider-bottom__item item-media-slider-bottom">
-                                <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
-                                <div className="item-media-slider-bottom__img"><img
-                                    src={itemMediaSliderBottom01}
-                                    alt="item-media-slider-bottom"/></div>
-                                <div className="item-media-slider-bottom__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Cras ultrices et integer velit pharetra.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="media-slider-bottom__column">
-                            <div className="media-slider-bottom__item item-media-slider-bottom">
-                                <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
-                                <div className="item-media-slider-bottom__img">
-                                    <img src={itemMediaSliderBottom02}
-                                    alt="item-media-slider-bottom"/></div>
-                                <div className="item-media-slider-bottom__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Cras ultrices et integer velit pharetra.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="media-slider-bottom__column">
-                            <div className="media-slider-bottom__item item-media-slider-bottom">
-                                <div className="item-media-slider-bottom__title">НАША ФИЛОСОФИЯ</div>
-                                <div className="item-media-slider-bottom__img"><img
-                                    src={itemMediaSliderBottom03} alt="item-media-slider-bottom"/></div>
-                                <div className="item-media-slider-bottom__text">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Cras ultrices et integer velit pharetra.
-                                </div>
-                            </div>
-                        </div>
-                    </div>*/

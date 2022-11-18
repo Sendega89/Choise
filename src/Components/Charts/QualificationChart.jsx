@@ -8,6 +8,7 @@ import {
     Tooltip,
     BarElement,
     Legend,
+    BarController,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 ChartJS.register(
@@ -18,7 +19,9 @@ ChartJS.register(
     Title,
     Tooltip,
     Legend,
-    BarElement
+    BarElement,
+    BarController,
+
 );
 
 export const options  = {
