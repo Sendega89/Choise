@@ -51,7 +51,7 @@
 		&.active {
 			color: $colorOne;
 			&::after {
-				left: 0%;
+				left: 0;
 				transform: translate(-50%, 0);
 				transition: all 0.3s ease;
 			}
@@ -163,31 +163,31 @@
 		}
 	}
 }
-.eVPmrC{
-	position: relative !important;
-	right: 40px !important;
-	height: 30px !important;
-	color: $colorNine !important;
+
+.sub-menu .menu-item {
+	color: $colorNine;
+
 }
-.eVPmrC:hover {
-	background-color: white !important;
-	color:$colorTwenty  !important;
+.sub-menu .menu-item:hover {
+	background-color: white;
+	color:$colorTwenty;
 }
-.eVPmrC:active {
-	color:$colorTwenty  !important;
+.sub-menu .menu-item:active {
+	color:$colorTwenty ;
 }
-.lkTtqM {
-	padding-left: 0 !important;
+
+.menu-anchor:hover {
+	background-color: white;
 }
-.lkTtqM:hover {
-	background-color: white !important;
-}
-.cxRqFw {
+.menu-anchor  {
 	background-color: white !important;
 	padding-left: 0 !important;
 }
-.ktVuSn:hover {
+.menu-item:hover {
 	color:$colorOne;
+}
+.menu-anchor .menu-label {
+	white-space: normal;
 }
 //...................................................................................................
 

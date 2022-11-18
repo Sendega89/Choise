@@ -1,6 +1,6 @@
 @media (any-hover: hover) {
 	.menu-page{
-		&__link{
+		&__link,{
 			&:hover{
 				color:$colorOne;
 			}
